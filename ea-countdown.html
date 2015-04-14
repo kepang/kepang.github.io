@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Sprint Countdown</title>
+  	<link href="css/main.css" rel="stylesheet">
+  	<link href="css/grid.css" rel="stylesheet">
+  	<link href="css/icomoon.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  	
+  </head>
+  <body class="project-page">
+
+    <nav class="me">
+      <a href="index.html"><img id="nav-logo" src="img/kp-nav-logo.svg" alt="Home navigation logo"></a>
+      <a href="https://github.com/kepang" target="_blank">
+        <span class="icon-github5"></span>
+      </a>
+      <a href="#about-me">
+        <span class="icon-mail4"></span>
+      </a>
+    </nav>
+    
+
+  	<header id="countdown-header">
+
+      <div class="grid">
+        <div class="col-2of10">&nbsp;</div>
+        <div class="col-6of10">
+          <article>
+            <div class="container sypnosis">
+              <img src="img/ea-tp.png" alt="The EA logo"> <span class="icon-tv"></span>
+              <video autoplay loop>
+                <source src="img/sprint/04.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                <img src="img/sprint/3.png" alt="3 days remaining in the sprint">
+              </video>
+        			<h2>Sprint Countdown Timer</h2>
+              <p>A small <cod>web app</cod> displayed on <des>large screen TVs</des> counting down the number of days remaining in the sprint. This would remind the busy engineering team of where they were in the work cycle.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+  	</header>
+    <section id="countdown-story-1">
+      <div class="grid">
+        <div class="col-3of10">&nbsp;</div>
+        <div class="col-4of10">
+          <h3>One time setup</h3>
+          <p>Only two values are needed to begin: the sprint duration AND any previous start date. So, if you start on an odd week, or if you start on a Tuesday, just enter that.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="col-1of10">&nbsp;</div>
+        <div class="col-8of10">
+          <div class="story-container">
+            <code>$( document ).ready(function() {</code>
+            <code class="tab">var cadence = 10; // 10 day sprint duration</code>
+            <code class="tab">var anyPreviousSprintStartDate = new Date("06/02/2014");</code>
+            <code class="tab">...</code>
+          </div>
+      
+        </div>
+      </div>
+    
+    </section>
+    <hr>
+
+    <section id="countdown-story-2">
+      <div class="grid">
+        <div class="col-3of10">&nbsp;</div>
+        <div class="col-4of10">
+          <h3>And no maintenance..</h3>
+          <p>The algorithm will automatically calculate the days remaining in the sprint based on the two values entered. The page will update on its own without further intervention.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="col-1of10">&nbsp;</div>
+        <div class="col-8of10">
+          <div class="story-container">
+
+            <code class="tab">...</code>
+            <code class="tab">var now = new Date();</code>
+            <code class="tab">var next, workingDays;</code>
+            <code class="tab">// Calculate sprint days remaining based on cadence and any previous sprint start date</code>
+            <code class="tab">workingDays = workingDaysBetweenDates(anyPreviousSprintStartDate, now);</code>
+            <code class="tab">workingDays = cadence - ((workingDays-1) % cadence); // 1 offset: don't count current day</code>
+            <code class="tab">...</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section id="countdown-story-3">
+      <div class="grid">
+        <div class="col-3of10">&nbsp;</div>
+        <div class="col-4of10">
+          <h3 class="story-heading">..means beating the shot clock</h3>
+        </div>
+      </div>
+      
+      <figure>
+        <img src="img/sprint/10-opt.jpg" alt="10 days remaining in the sprint.">
+        <img src="img/sprint/1-opt.jpg" alt="1 day remaining in the sprint">
+      </figure>
+      
+    </section>    
+
+
+    <nav class="next-project">
+      <div class="continue">
+        <div class="next-item-block">
+
+            Next: EA Project 1 - Landing Page Design
+
+        </div>
+        <a href="ea-cts.html">
+          <div class="cta-block">
+            <span class="icon-arrow-right2"></span>
+            <p>LEARN MORE</p>
+          </div>
+        </a>
+     </div>
+    </nav>
+    <div id="about-me-intro" class="center">
+      <h4>ABOUT ME</h4>
+      <h1>Kelly Pang</h1>
+      <h4>knp1@sfu.ca</h4>
+    </div>
+    <footer id="about-me">
+      <div id="my-story">
+        <p>Hello. I am a <bus>Business</bus> and <cod>Computer Science</cod> Joint Major at SFU, with a minor in <des>Design</des>.</p>
+        <p>I like solving problems that affect people, by creating <bus>products</bus> that meet their <cod>functional</cod> and <des>emotional</des> needs.</p>
+      </div>
+    </footer>    
+
+
+    
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+      Note the conditionals before and after that do not load this script 
+      if browser is greater-than or equal-to IE9.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+
+
+  </body>
+</html>

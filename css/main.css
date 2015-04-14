@@ -1,0 +1,844 @@
+@font-face {
+    font-family: 'MavenPro';
+    src: url('fonts/maven_pro_black-webfont.eot');
+    src: url('fonts/maven_pro_black-webfont.eot?#iefix') format('eot'),
+         url('fonts/maven_pro_black-webfont.woff') format('woff'),
+         url('fonts/maven_pro_black-webfont.ttf') format('truetype'),
+         url('fonts/maven_pro_black-webfont.svg#webfontXhB2DgBK') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('fonts/maven_pro_bold-webfont.eot');
+    src: url('fonts/maven_pro_bold-webfont.eot?#iefix') format('eot'),
+         url('fonts/maven_pro_bold-webfont.woff') format('woff'),
+         url('fonts/maven_pro_bold-webfont.ttf') format('truetype'),
+         url('fonts/maven_pro_bold-webfont.svg#webfontNOU7iUTL') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('fonts/maven_pro_medium-webfont.eot');
+    src: url('fonts/maven_pro_medium-webfont.eot?#iefix') format('eot'),
+         url('fonts/maven_pro_medium-webfont.woff') format('woff'),
+         url('fonts/maven_pro_medium-webfont.ttf') format('truetype'),
+         url('fonts/maven_pro_medium-webfont.svg#webfontNj5iy4Dl') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('fonts/maven_pro_regular-webfont.eot');
+    src: url('fonts/maven_pro_regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/maven_pro_regular-webfont.woff') format('woff'),
+         url('fonts/maven_pro_regular-webfont.ttf') format('truetype'),
+         url('fonts/maven_pro_regular-webfont.svg#webfontOM8fITNz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Border Box Model */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+/* NEW Colors 
+
+Blue:     #3FA9F5, rgb(63, 169, 245)
+Orange:   #F15A24, rgb(241, 90, 36)
+Charcoal: #333333, #333, rgb(51, 51, 51)
+
+Portfolio Blue 1:
+  rgb(55, 68, 76)
+  #37444C
+
+Blue 2
+  rgb(95, 105, 112)
+  #5F6970
+
+Blue 3
+  rgb(135, 143, 148)
+  #878F94
+
+Blue 4
+  rgb(175, 180, 184)
+  #AFB4B8
+
+Blue 5
+  rgb(215, 218, 219)
+  #D7DADB
+
+Light Grey
+  rgba(204, 204, 204, 0.25)
+  #CCC - opacity 0.25
+*/
+
+
+/* Type */
+
+body, textarea {
+  font-family: 'MavenPro', sans-serif;
+  font-weight: normal;
+  color: #37444C;
+  line-height: 1.45;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+.dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4,
+.dark-bg small, .dark-bg .font-small {
+  color: white;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+/* Nav Styles */
+
+nav.me {
+  position: fixed;
+  font-size: 1.125em;
+  font-weight: 300;
+  margin-top: 0;
+  padding: 1em;
+  text-shadow: 0px 0px 2px white;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+nav.me a {
+  text-decoration: none;
+  color: rgba(55, 68, 76, 0.5);
+}
+
+nav.me a span {
+  display: block;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-left: 0.2em;
+  color: #37444C;
+}
+
+nav.me a:hover span, nav.me a:focus span {
+  opacity: 0.5;
+}
+
+#nav-logo {
+  width: 3em;
+}
+
+
+/* Links */
+
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  color: #5F6970;
+}
+
+.dark-bg a:link, 
+.dark-bg a:visited, 
+.dark-bg a:active {
+  color: white;
+} 
+
+a:hover, a:focus {
+  opacity: 0.5;
+}
+
+/* Buttons */
+a.button {
+  background-color: rgba(0, 204, 255, 0.75);
+  color: white;
+  padding: 1em 2em;
+  font-size: 0.75em;
+  text-decoration: none;
+
+  border-radius: 40px; 
+  -moz-border-radius: 40px; 
+  -webkit-border-radius: 40px; 
+
+}
+
+a.button:hover, a.button:active {
+  background-color: rgba(0, 204, 255, 1);;
+}
+
+a.lead-in {
+  position: absolute;
+  bottom: 7em;
+}
+
+
+
+/* General Styles */
+
+.center {
+  text-align: center;
+}
+
+bus {
+  font-weight: 300;
+  color: #0CF;
+}
+
+des {
+  font-weight: 300;
+  color: #F60;
+}
+
+cod {
+  font-weight: 300;
+  color: #333;
+}
+
+#kp-function bus, #kp-function des, #kp-function cod {
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #CCC;
+}
+
+.tags {
+  color: #CCC;
+}
+
+#EA-coop .tags {
+  color: white;
+}
+
+
+
+
+
+
+/* LAYOUT (SECTIONS) */
+/*********************/
+
+
+
+/* home.html */
+
+section#intro {
+  background: url("../img/home-bg.svg") 50%;
+  background-size: cover;
+  height: 24.75em;
+}
+
+  #intro #logo {
+    margin-top: 3.875em;
+    width: 14em;
+  }
+
+  #intro .job-title {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  #intro #tri-color-bar {
+    margin-top: 2em;
+  }
+
+  #intro #blurb {
+    color: #999;
+    /*text-align: left;*/
+    width: 31em;
+    line-height: 1.5em;
+    /*margin: 0 5em 0 3em;*/
+    margin: 2em auto;
+  }
+
+/*--*/
+section#kp-function {
+  height: 21em;
+  text-align: center;
+}
+
+  #kp-function .code-wrap {
+    margin: 0 auto;
+    max-width: 30em;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    color: #878F94;
+  }
+
+  #kp-function .large-code-block:first-child {
+    margin-top: 2em;
+  }
+
+  #kp-function .large-code-block:last-child {
+    margin-bottom: 0.5em;
+  }
+
+  #kp-function .large-code-block {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  #kp-function .code-comment {
+    margin: 1em 0;
+    text-align: left;
+    font-size: 0.8em;
+    color: #AFB4B8;
+  }
+
+  #kp-function p {
+    margin-top: 4em;
+    letter-spacing: 0px;
+  }
+
+  #kp-function p>span {
+    margin-left: 0.5em;
+    font-size: 2em;
+    vertical-align: middle;
+  }
+
+/*  @-webkit-keyframes bg-anim {
+    0% { background-position: 100%; }
+    100% { background-position: 90%; }
+  }
+
+  @keyframes bg-anim {
+    0% { background-position: 100%; }
+    100% { background-position: 90%; }
+  }*/
+
+
+/*Common Styles For Project Sections*/
+/*--*/
+.dark-bg cod {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-bg p {
+  color: white;
+}
+
+  article.sypnosis {
+    position: relative;
+    height: 31em;
+    padding-right: 2em;
+  }
+
+  article.sypnosis p {
+    color: #5F6970;
+  }
+
+  .sypnosis bus, .sypnosis des, .sypnosis cod {
+    font-weight: 300;
+  }
+
+.continue {
+  position: relative;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  border-left: 2px solid #CCC;
+  padding-left: 1em;
+}
+
+.continue .hashtag-block {
+  display: inline-block;
+}
+
+.continue .next-item-block {
+  position: absolute;
+  bottom: 1em;
+  right: 12em;
+}
+
+.continue .cta-block {
+  position: absolute;
+  right: 1em;
+  bottom: -1em;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em;
+  border: 2px solid #D7DADB;
+}
+
+.cta-block>span {
+  font-size: 4em;
+}
+
+.cta-block>p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/*--*/
+section#EA-intro {
+  padding: 5em 0;
+  border-top: 1px solid #CCC;
+
+  background: url("../img/lbj-clearmask-opt.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+}
+
+  #EA-intro>p {
+    width: 20em;
+    margin: 0 auto;
+    color: #AFB4B8;
+  }
+
+  #EA-intro.dark-bg {
+    color: white;
+  }
+
+  #EA-intro img {
+    max-width: 8em;
+  }
+
+
+/*--*/
+section#EA-landing-page-project {
+  padding: 2em;
+  margin: 4em 0;  
+}
+  .figure-block {
+    position: relative;
+    width: 100%;
+    height: 30em;
+  }
+
+  .positioning-container {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+  }
+
+  .positioning-container>small {
+    position: relative;
+    top: 3.5em;
+    color: #AFB4B8;
+  }
+
+  #EA-landing-page-project figure img {
+    width: 100%;
+    max-width: 35em;
+  }
+
+/*--*/
+section#EA-countdown-project {
+/*  position: relative;
+*/  
+  padding: 2em;
+  margin: 4em 0;
+  border-top: 1px solid #D7DADB;
+  /*background: url("../img/lbj-clearmask-blur.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
+  color: white;*/
+}
+
+  #EA-countdown-project figure img {
+    width: 100%;
+  }
+
+  #EA-countdown-project video {
+    display: block;
+    margin: 2em auto;
+    width: 90%;
+    max-width: 45em;
+  }
+
+
+
+
+/*--*/
+
+
+
+/*--*/
+  #about-me-intro {
+  padding: 5em 0;
+
+
+  /*background-color: yellowgreen;*/
+  /*background-color: #5F6970;*/
+  /*background-color: #D7DADB;*/
+  /*background-image: url("../img/home-bg-effect.svg") 50%;*/
+  background: url("../img/home-bg.svg") 50%;
+  background-size: cover;
+
+}
+  #about-me-intro.dark-bg {
+    color: black;
+  }
+
+  #about-me-intro span {
+    font-size: 3em;
+    color: white;
+  }
+
+/*--*/
+
+
+
+/*--*/
+footer#about-me {
+  height: 10em;
+  background-color: white;
+  color: #878F94;
+}
+  
+  #about-me #my-story {
+    max-width: 30em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+/* ea-cts.html */
+
+hr {
+  height: 1px;
+  background-color: #CCC;
+  /*border: none;*/
+}
+
+.project-page p {
+  color: #878F94;
+  font-size: 0.9em;
+}
+
+.project-page section {
+  margin: 4em 2em;
+}
+
+.story-heading {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.story-heading-solo {
+  background-color: rgba(204, 204, 204, 0.15);
+  height: 4em;
+  padding: 4em;
+}
+
+.final {
+  background-color: rgba(204, 204, 204, .25);
+
+}
+
+.story-heading-solo h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.story-container {
+
+}
+
+code {
+  display: block;
+  line-height: 3em;
+  background-color: #EEE;
+  word-wrap: break-word;
+  /*break-word: break-word;*/
+}
+
+code.tab {
+  padding-left: 3em;
+}
+
+header#CTS-header {
+  position: relative;
+  background: url("../img/fifa01-goalie.opt.jpg");
+  background-size: cover;
+  background-position: 90%;
+  background-attachment: fixed;
+  height: 30em;
+  color: white;
+
+
+/*  -moz-animation: bg-anim 1s ease-out ;
+  -webkit-animation: bg-anim 1s ease-out ;
+  -ms-animation: bg-anim 1s ease-out ;
+  -o-animation: bg-anim 1s ease-out ;
+    animation: bg-anim 1s ease-out;*/
+
+
+}
+
+  #CTS-header p, #CTS-story-3 p {
+    color: #D7DADB;
+  }
+
+
+
+
+
+
+  #CTS-header .blue-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 204, 255, 0.15);
+  }
+
+  #CTS-header figure, #CTS-header article {
+    text-align: center;
+  }
+
+  #CTS-header #landing-page-ea-logo {
+    width: 8em;
+    height: 8em;
+    margin-top: 3em;
+    margin-bottom: -2em;
+  }
+
+
+  #CTS-story-1, #CTS-story-2 {
+    position: relative;
+  }
+
+
+
+  #CTS-story-1 .story-container img {
+    width: 100%
+  }
+
+  #confluence {
+    width: 100%;
+  }
+
+  .img-container {
+/*    position: absolute;
+    bottom: 0em;*/
+  }
+
+  .img-container img {
+    border: 1px solid #CCC;
+
+  }
+
+  #CTS-story-2 #customers-img {
+    width: 100%;
+    border: none;
+  }
+
+  #CTS-story-3 {
+    background: url("../img/24lynch-opt.jpg");
+    background-size: cover;
+    background-position: 70% 30%;
+    height: 27em;
+    padding: 3em 1em;
+  }
+
+  #CTS-story-4 p, #CTS-story-4 h3, #CTS-story-4 h4, #CTS-story-4 h5 {
+    text-align: center;
+  }
+
+  #CTS-story-4 img {
+    width: 100%;
+  }
+
+  #CTS-story-4 .mockup-container {
+    padding: 1em;
+  }
+
+  .mockup-container img {
+    border: 1px solid #AFB4B8;
+  }
+
+  #CTS-story-5 {
+    background-color: rgba(204, 204, 204, 0.15);
+    padding: 2em;
+  }
+
+  #CTS-story-5 figure {
+    margin: 4em auto;
+    max-width: 43.75em;
+  }
+
+  #CTS-story-5 img {
+    width: 100%;
+  }
+
+
+#story-1 h3 {
+  text-align: right;
+}
+
+#story-1 figure:nth-child(2) {
+  margin-top: 4em;
+  border-top: 1px solid #CCC;
+  padding: 1em 0;
+}
+
+
+
+
+
+
+/*ea-countdown.html*/
+/*--*/
+header#countdown-header {
+  /*background-color: black;*/
+  text-align: center;
+  position: relative;
+  background: url("../img/lilliard-blur.jpg");
+  background-size: cover;
+  padding: 2em;
+}
+
+  #countdown-header article {
+    text-align: center;
+  }
+
+  #countdown-header span {
+    color: black;
+    font-size: 5em;
+  }
+
+  #countdown-header video {
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  #countdown-header .sypnosis img {
+    width: 50%;
+    max-width: 8em;
+    margin: 3em auto -2em;
+  }
+
+  #countdown-header ~ section p {
+    text-align: center;
+  }
+
+  #countdown-header ~ section h3 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #countdown-story-3 figure {
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  #countdown-story-3 figure img {
+    max-width: 100%;
+  }
+
+
+
+section#countdown-timer {
+  min-height: 40em;
+  border-top: 1px solid #CCC;
+}
+
+
+
+/*--*/
+
+nav.next-project {
+  border-top:2px solid rgba(204, 204, 204, 0.25);
+  padding: 4em 2em;
+
+
+}
+
+
+
+/* Animations */
+
+/*.animated { 
+  -webkit-animation-duration: 2s; 
+  animation-duration: 2s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeIn { 
+  0% {opacity: 0;} 
+  100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+  0% {opacity: 0;} 
+  100% {opacity: 1;} 
+} 
+
+.fadeIn { 
+  -webkit-animation-name: fadeIn; 
+  animation-name: fadeIn; 
+}*/
+
+
+
+/*
+Portfolio Blue 1:
+  rgb(55, 68, 76)
+  #37444C
+
+Blue 2
+  rgb(95, 105, 112)
+  #5F6970
+
+Blue 3
+  rgb(135, 143, 148)
+  #878F94
+
+Blue 4
+  rgb(175, 180, 184)
+  #AFB4B8
+
+Blue 5
+  rgb(215, 218, 219)
+  #D7DADB
+
+Light Grey
+  rgba(204, 204, 204, 0.25)
+  #CCC - opacity 0.25
+*/
+
+
+
+
+
+
+
