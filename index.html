@@ -18,7 +18,7 @@
         <a href="https://github.com/kepang" target="_blank">
           <span class="icon-github5"></span>
         </a>
-        <a href="#about-me">
+        <a id="about-nav" href="#about-me">
           <span class="icon-mail4"></span>
         </a>
       </nav>
@@ -30,7 +30,6 @@
         <p class="job-title">KELLY PANG</p>
         <p class="job-title">WEB AND MOBILE UI DESIGNER</p>
         <img id="tri-color-bar" src="img/tri-color-bar.svg" alt="A tri-color bar for decoration">
-  			<!-- <article id="blurb">I like solving problems that affect <em>people</em> by designing and creating <bus>products</bus> that meet their <cod>functional</cod> and <des>emotional</des> needs.</article> -->
   		</div>
   	</section>
 
@@ -39,17 +38,22 @@
   			<div class="col-10of10">
   				<div class="code-wrap">
 			  		<div class="large-code-block">kp() {</div>
-			  		<div class="large-code-block">&emsp;&emsp;&emsp;&emsp;return <bus>business()</bus> + <des>design()</des> + <cod>code()</cod>;</div>
+			  		<div class="large-code-block">&emsp;&emsp;&emsp;&emsp;return <span class="bus">business()</span> + <span class="des">design()</span> + <span class="cod">code()</span>;</div>
 			  		<div class="large-code-block">}</div>
-            <div class="code-comment">// Retrieve SFU <bus>Beedie</bus> + <des>SIAT</des> + <cod>Computer Science</cod> skills</div>
-            <div class="code-comment">// Confused? It means I stayed in school too long. <a href="#about-me">ABOUT ME</a>.</div>
+            <div class="code-comment">// Retrieve SFU <span class="bus">Beedie</span> + <span class="des">SIAT</span> + <span class="cod">Computer Science</span> skills</div>
+            <div class="code-comment">// Confused? It means I stayed in school too long. <a id="about-link" href="#about-me">ABOUT ME</a>.</div>
 			  	</div>
 		  	</div>
 	  	</div>
-  		<p>See me in action <span class="icon-circle-down"></span></p>
+  		<p>
+        <a id="see-me" href="#EA-intro">SEE ME IN ACTION</a>
+        <span class="icon-circle-down"></span>
+        
+      </p>
   		
   	</section>
 
+    <a name="start-portfolio"/>
     <section id="EA-intro" class="center dark-bg">
       <img src="img/ea-tp-white.png" alt="EA logo in white">
       <h4>Electronic Arts Coop</h4>
@@ -74,15 +78,15 @@
            <div class="positioning-container">
               <small>EA - PROJECT 1 - INDIVIDUAL</small>
               <h3>Landing Page Design</h3>
-              <p>My first assignment was to improve their brand image to <bus>better sell their services</bus> within the organization.</p>
-              <p>This involved <des>re-designing their landing page</des> to project professionalism and credibility of their group.</p>
-              <p>A constraint was to work within their existing logo and style guide, and then to <cod>program it into their coporate wiki</cod>.</p>
+              <p>My first assignment was to improve their brand image to <span class="bus">better sell their services</span> within the organization.</p>
+              <p>This involved <span class="des">re-designing their landing page</span> to project professionalism and credibility of their group.</p>
+              <p>A constraint was to work within their existing logo and style guide, and then to <span class="cod">program it into their coporate wiki</span>.</p>
 
               <div class="continue">
                 <div class="hashtag-block">
-                  <div><bus>#marketing</bus></div>
-                  <div><des>#design</des></div>
-                  <div><cod>#code</cod></div>
+                  <div><span class="bus">#marketing</span></div>
+                  <div><span class="des">#design</span></div>
+                  <div><span class="cod">#code</span></div>
                 </div>
                 <a href="ea-cts.html">
                   <div class="cta-block">
@@ -119,13 +123,13 @@
           <div class="positioning-container">
             <small>EA - PROJECT 2 - INDIVIDUAL</small>
             <h3>Sprint Countdown Timer</h3>
-            <p>Another project was to design and write a <cod>small web app</cod> to be displayed on <des>large screen TVs</des> counting down the number of days remaining in the sprint.</p>
+            <p>Another project was to design and write a <span class="cod">small web app</span> to be displayed on <span class="des">large screen TVs</span> counting down the number of days remaining in the sprint.</p>
             <p>This would remind the busy engineering team of where they were in the work cycle.</p>
             <div class="continue">
               <div class="hashtag-block">
                 <div>&nbsp;</div>
-                <div><des>#design</des></div>
-                <div><cod>#code</cod></div>
+                <div><span class="des">#design</span></div>
+                <div><span class="cod">#code</span></div>
               </div>
               <a href="ea-countdown.html">
                 <div class="cta-block">
@@ -140,7 +144,7 @@
   		
   	</section>
 
-
+    <a name="about"/>
     <section id="about-me-intro" class="center">
       <h4>ABOUT ME</h4>
       <h1>Kelly Pang</h1>
@@ -148,10 +152,12 @@
     </section>
     <footer id="about-me">
       <div id="my-story">
-        <p>Hello. I am a <bus>Business</bus> and <cod>Computer Science</cod> Joint Major at SFU, with a minor in <des>Design</des>.</p>
-        <p>I like solving problems that affect people, by creating <bus>products</bus> that meet their <cod>functional</cod> and <des>emotional</des> needs.</p>
+        <p>Hello. I am a <span class="bus">Business</span> and <span class="cod">Computer Science</span> Joint Major at SFU, with a minor in <span class="des">Design</span>.</p>
+        <p>I like solving problems that affect people, by creating <span class="bus">products</span> that meet their <span class="cod">functional</span> and <span class="des">emotional</span> needs.</p>
       </div>
     </footer>
+
+    <script src="js/helper.js"></script>
 
     
     <!-- 

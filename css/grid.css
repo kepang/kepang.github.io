@@ -87,8 +87,11 @@
 
 
 
-
+/*868px*/
 @media (max-width: 54.25em) {
+  .col-8of10 {
+    width: 100%;
+  }
   .col-6of10 {
     width: 100%;
   }
@@ -127,7 +130,7 @@
 
   nav.me {
   	padding: 0.5em;
-  	background-color: rgba(255, 255, 255, 0.5);
+  	background-color: rgba(255, 255, 255, 0.95);
   }
 
   #nav-logo {
@@ -139,11 +142,23 @@
   	width: 50%;
   }
 
-  .story-heading-solo {
-  	height: 6em;
-  	padding: 1em;
+  #CTS-story-1 figure, #CTS-story-2 figure {
+    margin: 1em 0;
   }
 
+  .story-heading-solo {
+  	height: 6em;
+  	padding: 2em;
+  }
+
+  .final {
+    height: 10em;
+  }
+
+  article.sypnosis {
+    padding-right: 0;
+    height: auto;
+  }
 
 }
 
@@ -152,13 +167,17 @@
 	.col-1of4 {
 		width: 100%;
 	}
+
+
 }
 
 
 
 
-
+/*525px*/
 @media (max-width: 32.8125em) {
+
+
   #kp-function {
     margin: 1em;
     font-size: 0.7em;
@@ -170,6 +189,84 @@
 
   #about-me #my-story {
   	margin: 1em;
-  	text-align: left;
+  
   }
+
+  #CTS-header {
+    height: 34em;
+  }
+
+  #CTS-header article h2 {
+    font-size: 2em;
+  }
+
+  .story-heading-solo {
+    height: 10em;
+  }
+
+  #CTS-story-5 {
+    padding: 2em 0;
+  }
+
+  #countdown-story-3 figure {
+    margin: 3em 0;
+  }
+
 }
+
+
+/*366px*/
+@media (max-width: 22.75em) {
+  
+  nav.me {
+    width: 100%
+  }
+
+  nav.me span.icon-github5 {
+    position: absolute;
+    margin: 0 0 0 -0.5em;
+    left: 50%;
+  }
+
+  span.icon-mail4 {
+    position: absolute;
+    right: 0.5em;
+  }
+
+  #kp-function .large-code-block {
+    font-size: 1.1em;
+  }
+
+  #tri-color-bar {
+    width: 100%;
+  }
+
+  section#EA-landing-page-project, section#EA-countdown-project {
+    height: 52em;
+  }
+
+  #CTS-story-3 {
+    padding: 0em 2em;
+    height: 30em;
+    background-position: 22% 30%;
+  }
+
+  .final {
+    height: 16em;
+  }
+
+  .continue .cta-block {
+    bottom: 0;
+    right: 0;
+  }
+
+  .continue .next-item-block {
+    right: 8em;
+  }
+
+  #countdown-header h2 {
+    font-size: 2em;
+  }
+
+}
+
