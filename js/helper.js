@@ -1,22 +1,22 @@
 $(document).ready( function() {
 
-
-	function scrollToAnchor(aid){
-	    var aTag = $("a[name='"+ aid +"']");
-	    $('html,body').animate({scrollTop: aTag.offset().top}, 1500, "swing");
-	}
-
-	$("#about-link").click(function() {
-	   scrollToAnchor('about');
-
+	skrollr.init({
+		mobileCheck: function() {
+			return false;
+		}
 	});
+	
+	// bind anchor to click
+	$("a[href^=#]").bind("click", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
 
-	$("#about-nav").click(function() {
-		scrollToAnchor('about');
+		var target = $(this).attr("href");
+		$(target).velocity("scroll", {
+			duration: 1500,
+			offset: 20,
+			easing: "ease-in-out"
+		});
 	});
-
-	$("#see-me").click(function() {
-		scrollToAnchor('start-portfolio');
-	});	
 
 });
