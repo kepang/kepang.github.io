@@ -6,40 +6,38 @@
   	<title>CTS Landing Page</title>
   	<link href="css/main.css" rel="stylesheet">
   	<link href="css/grid.css" rel="stylesheet">
-  	<link href="css/icomoon.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  	
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>    
   </head>
   <body class="project-page">
-
-    
     <nav class="me">
-      <a href="index.html"><img id="nav-logo" src="img/kp-nav-logo.svg" alt="Home navigation logo"></a>
-      <a href="https://github.com/kepang" target="_blank">
-        <span class="icon-github5"></span>
-      </a>
-      <a id="about-nav" href="#about-me">
-        <span class="icon-mail4"></span>
-      </a>
+      <ul>
+        <div class="nav-ea-items">
+          <a href="index.html#EA-article-wrap">
+            <li id="home"><span>&larr;</span>&nbsp;BACK</li>
+          </a>
+          <a id="a-nav-project1" href="#CTS-header">
+            <li data-start="border-bottom-color: gold; color: gold;" data-center-top="border-bottom-color: transparent; color: white;" data-anchor-target="#CTS-outcome">PROJECT 1 (EA)</li>
+          </a>
+        </div>
+        <div class="nav-ea-contact">
+          <a href="mailto:kepang.zz@gmail.com"><li>kepang.zz@gmail.com</li></a>
+        </div>
+      </ul>
     </nav>
     
-  	<header id="CTS-header" class="grid">
-  		<div class="blue-overlay">
-        <div class="col-3of10">&nbsp;</div>
-        <div class="col-4of10">
+  	<section id="CTS-header">
+  		<div class="blue-overlay">   
+        <article>
           <figure>
             <img id="landing-page-ea-logo" src="img/ea-tp-white.png" alt="The EA logo in white">
           </figure>
-          <article>
-            <div class="container sypnosis dark-bg">
-        			<h2>Landing Page Design</h2>
-              <p>In this project, I helped to improve the brand image of the CTS team and the services they offer. This involved <span class="des">re-designing</span> and <span class="cod">implementing</span> their wiki portal into a landing page that projected <span class="bus">professionalism and credibility</span>.</p>
-            </div>
-
-
-          </article>
-        </div>
+          <header class="story-container sypnosis dark-bg">
+      			<h2>Landing Page Design</h2>
+            <p>In this project, I helped to improve the brand image of the CTS team and the services they offer. This involved <em>redesigning</em> and <em>implementing</em> their wiki portal into a landing page that projected <em>professionalism and credibility</em>.</p>
+          </header>
+        </article>
   		</div>
-  	</header>
+  	</section>
     <div class="story-heading-solo">
       <h3>Take a few existing ingredients</h3>
     </div>
@@ -47,22 +45,20 @@
       <div class="grid">
         <div class="col-1of10">&nbsp;</div>
         <div class="col-3of10">
-          <div class="story-container">
+          <article class="story-container">
             <img src="img/CTS-Logo_small.png" alt="The CTS logo">
             <p>CTS (Central Technology Services) had a rudimentary landing page within their corporate Wikipedia, but it failed to give them the professional image they were looking for.</p>
             <p>They did, however, have a logo and style guide, which they were loosely following.</p>
-          </div>
+          </article>
         </div>
         <div class="col-6of10">
           <div class="img-container">
             <figure>
-              <img id="confluence" src="img/confluence.png" alt="The default Confluence template">
+              <img id="confluence" src="img/confluence-th.jpg" alt="The default Confluence template">
             </figure>
-
           </div>
         </div>        
       </div>
-    
     </section>
     <hr>
     <section id="CTS-story-2">
@@ -76,11 +72,11 @@
           </div>
         </div>
         <div class="col-3of10">
-          <div class="story-container">
+          <article class="story-container">
             <h3>And consider our customers</h3>
             <p>Our customers were game franchises, such as FIFA, Madden, and NHL, who utilized central team services for common features so they could focus on creating the best games they possible could.</p>
             <p>Ultimately, the well-being of CTS depended upon the value they could create for the game teams.</p>
-          </div>
+          </article>
         </div>  
       </div>
     </section>
@@ -89,109 +85,127 @@
       <div class="grid">
         <div class="col-6of10">&nbsp;</div>
         <div class="col-3of10">
-          <h3>Identifying our purpose</h3>
-          <p>We needed to improve the brand image to establish professionalism and credibility in the minds of our customers.</p>
-          <p>We also needed to communicate the functions of the team and have the page act as a Wikipedia resource to the rest of the organization. Visitors should be able directed to where they needed to go quickly and effectively.<p>
+          <article class="story-container">
+            <h3>Identifying our purpose</h3>
+            <p>We needed to improve the brand image to establish professionalism and credibility in the minds of our customers.</p>
+            <p>We also needed to communicate the functions of the team and have the page act as a Wikipedia resource to the rest of the organization. Visitors should be directed to where they needed to go quickly and effectively.<p>
+          </article>
         </div>
       </div>    
     </header>
-    <div class="story-heading-solo">
-      <h3>To start the process of iteration</h3>  
-    </div>
     <section id="CTS-story-4">
-      
+      <h3>Starting the process of iteration:</h3>
       <div class="grid">
-        
         <div class="col-1of4">
-          <div class="mockup-container">
-            <h4>Layout</h4>
-            <a href="img/cts-mockup1-opt.jpg">
+          <div class="mockup-container" data-bottom-top="transform: translateY(10em);" data-center="transform: translateY(0em);">
+            <h5>Layout</h5>
+            <a class="img-link" href="img/cts-mockup1-opt.jpg">
               <img src="img/cts-mockup1-th.jpg" alt="The first mockup">
             </a>
-            <p>Easy access to information</p>
+            <p>Easy access to information: Search, Navigate, Explore.</p>
           </div>
         </div>
         <div class="col-1of4">
-          <div class="mockup-container">
-            <h4>Identity</h4>
-            <a href="img/cts-mockup2-opt.jpg">
+          <div class="mockup-container" data-bottom-top="transform: translateY(20em);" data-center="transform: translateY(0em);">
+            <h5>Identity</h5>
+            <a class="img-link" href="img/cts-mockup2-opt.jpg">
               <img src="img/cts-mockup2-th.jpg" alt="The second mockup">
             </a>
-            <p>A statement of who we are</p>
+            <p>A statement of who we are.</p>
           </div>
         </div>
         <div class="col-1of4">
-          <div class="mockup-container">
-            <h4>Art Direction</h4>
-            <a href="img/cts-mockup3-opt.jpg">
+          <div class="mockup-container" data-bottom-top="transform: translateY(30em);" data-center="transform: translateY(0em);">
+            <h5>Art Direction</h5>
+            <a class="img-link" href="img/cts-mockup3-opt.jpg">
               <img src="img/cts-mockup3-th.jpg" alt="The third mockup">
             </a>
-            <p>An aura of EA games</p>
+            <p>An aura of EA games.</p>
           </div>
         </div>
         <div class="col-1of4">
-          <div class="mockup-container">
-            <h4>Branding</h4>
-            <a href="img/cts-mockup4-opt.jpg">
+          <div class="mockup-container" data-bottom-top="transform: translateY(40em);" data-center="transform: translateY(0em);">
+            <h5>Branding</h5>
+            <a class="img-link" href="img/cts-mockup4-opt.jpg">
               <img src="img/cts-mockup4-th.jpg" alt="The fourth mockup">
             </a>
-            <p>Distinguishing sub-groups through the existing color palette</p>
+            <p>Distinguishing sub-groups through the existing color palette.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="final story-heading-solo">
-      <h3>And turning it into something that invites the customer</h3>
-    </div>
-    <div id="CTS-story-5" class="grid">
-      <div class="center col-10of10">        
+    <section id="CTS-story-5" class="grid">
+      <div class="center col-10of10">
+        <h3>Turning it into something that invites the customer</h3>
         <figure>
-          <a href="img/cts-100pct.jpg">
+          <a class="img-link" href="img/cts-100pct.jpg">
             <img src="img/cts-50pct.jpg" alt="The finished landing page">
           </a>
         </figure>
       </div>
-    </div>
+    </section>
 
     <section id="CTS-outcome" class="grid">
       <div class="col-3of10">&nbsp;</div>
       <div class="col-4of10">
-        <h4>Outcome</h4>
-        <p>Because of the abstract logo, it was important to reinforce the image of CTS and its sub-groups through its existing color palette and typography.</p>
-        <p>My official job title was project analyst where the original plan was to do project management work. After this project, I ended up doing design work for the rest of the work term, helping to brand their team and services through logo design, powerpoint templates, and producing various video content to display through their area.</p>
+        <article class="story-container">
+          <h4>Outcome</h4>
+          <p>Because of the abstract logo, it was important to reinforce the image of CTS and its sub-groups through its existing color palette and typography. Overall, the new design better communicated their identity and allowed users to search, navigate, or explore the site more effectively. </p>
+          <p>My official job title was project analyst where the original plan was to do project management work. After this project, I ended up doing design work for the rest of the work term, helping to brand their team and services through logo design, powerpoint templates, and producing various video content to display through their area.</p>
+        </article>
       </div>
     </section> 
 
-    <nav class="next-project">
-      <div class="continue">
+    <nav id="next-proj2" class="next-project">
+      <div class="continue" data-bottom-top="opacity: 0; transform: translateX(-10%);" data--25p-bottom="opacity: 1; transform: translateX(0%);" data-target-anchor="#next-proj2">
         <div class="next-item-block">
-
-            Next: EA Project 2 - Countdown Timer
-
+          NEXT: Project 2 - Information Design
+        </div>        
+        <div class="cta-block">
+          <a href="index.html#proj2" class="button">&rarr;</a>
         </div>
-        <a href="ea-countdown.html">
-          <div class="cta-block">
-            <span class="icon-arrow-right2"></span>
-            <p>LEARN MORE</p>
-          </div>
-        </a>
+        
      </div>
     </nav>
 
-    <a name="about"></a>
-    <div id="about-me-intro" class="center">
-      <h4>ABOUT ME</h4>
-      <h1>Kelly Pang</h1>
-      <h4>knp1@sfu.ca</h4>
-    </div>
     <footer id="about-me">
-      <div id="my-story">
-        <p>Hello. I am a <span class="bus">Business</span> and <span class="cod">Computer Science</span> Joint Major at SFU, with a minor in <span class="des">Design</span>.</p>
-        <p>I like solving problems that affect people, by creating <span class="bus">products</span> that meet their <span class="cod">functional</span> and <span class="des">emotional</span> needs.</p>
+      <div class="grid">
+        <div class="col-5of10">
+          <div class="kp-about">
+            <img src="img/logoicon-flat.svg" alt="Flat logo icon">
+            <h2>about</h2>
+          </div>
+          
+          
+        </div>
+        <div class="5of10">&nbsp;</div>
+      </div>
+      <div class="grid about-container">
+        <div class="col-5of10">
+          <article>
+            <p>The site and my branding was designed and developed by myself. It is a <em>grid-based, responsive design hand-coded with HTML5 and CSS; skrollr.js with velocity.js were used for the scroll effects</em>. I used Adobe tools to create, layout, or modify art assets. Game art in project 1 is from EA.
+            </p>
+            <p>This portfolio is meant to demonstrate some of my skills centered around web and mobile design and front-end prototyping and development.
+            </p>
+        </div>
+        <div class="col-5of10">
+          <article>
+            <p>Check my github for a few examples of my more functional and technical work, or contact me for my resume (kepang.zz@gmail.com).</p>
+            <div class="contact-container">
+              <h5>GITHUB / CONTACT</h5>
+              <a href="https://github.com/kepang" target="_blank"><img class="contact-icon" src="img/contact-github.svg" alt="Github contact icon."></a>
+              <a href="#"><img class="contact-icon" src="img/contact-email.svg" alt="Email contact icon."></a>
+              <a href="#"><img class="contact-icon" src="img/contact-in.svg" alt="LinkedIn contact icon"></a>
+            </div>
+
+          </article>
+        </div>
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/velocity.min.js"></script>   
     <script src="js/helper.js"></script>
     
     <!-- 

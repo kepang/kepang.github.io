@@ -6,160 +6,173 @@
   	<title>Portfolio Home</title>
   	<link href="css/main.css" rel="stylesheet">
   	<link href="css/grid.css" rel="stylesheet">
-    <link href="css/icomoon.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-  	<link href="css/iconmoon.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  	
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header>
-      <nav class="me">
-        <a href="index.html"><img id="nav-logo" src="img/kp-nav-logo.svg" alt="Home navigation logo"></a>
-        <a href="https://github.com/kepang" target="_blank">
-          <span class="icon-github5"></span>
-        </a>
-        <a id="about-nav" href="#about-me">
-          <span class="icon-mail4"></span>
-        </a>
-      </nav>
-    </header>
+    <nav class="me"
+    data-start="opacity: 0; z-index:-20" data-40p-start="opacity: 0" data-60p-start="opacity: 1; z-index:100;" data-anchor-target="#intro">
+      <ul>
+        <div class="nav-home-items">
+          <a href="index.html">
+            <li id="home" data-bottom-top="border-bottom-color: transparent; color: white;" data-center-top="border-bottom-color: gold; color: gold;" data-center-bottom="border-bottom-color: transparent; color: white;" data-smooth-scrolling="off" data-anchor-target="#intro">HOME</li>
+          </a>
+          <a id="nav-project1" href="#proj1">
+            <li data-bottom-top="border-bottom-color: transparent; color: white;" data-center-top="border-bottom-color: gold; color: gold;" data-center-bottom="border-bottom-color: transparent; color: white;" data-smooth-scrolling="off" data-anchor-target="#EA-intro">PROJECT 1</li>
+          </a>
+          <a id="nav-project2" href="#proj2">
+            <li data-bottom-top="border-bottom-color: transparent; color: white;" data-center-top="border-bottom-color: gold; color: gold;" data--5p-bottom="border-bottom-color: transparent; color: white;" data-smooth-scrolling="off" data-anchor-target="#IAT-235">PROJECT 2</li>
+          </a>
+          <a id="nav-contact" href="#about-me">
+            <li data-5p-bottom-top="border-bottom-color: transparent; color: white;" data--20p-bottom-top="border-bottom-color: gold; color: gold;" data-smooth-scrolling="off" data-anchor-target="#about-me">ABOUT</li>
+          </a>
+
+        </div>
+        <div class="nav-contact">
+          <a href="mailto:kepang.zz@gmail.com"><li>kepang.zz@gmail.com</li></a>
+        </div>
+      </ul>
+    </nav>
 
   	<section id="intro" class="grid">
-  		<div class="center col-10of10">
-  			<img id="logo" src="img/kp-logo.png" alt="Logo for Kelly Pang">
-        <p class="job-title">KELLY PANG</p>
-        <p class="job-title">WEB AND MOBILE UI DESIGNER</p>
-        <img id="tri-color-bar" src="img/tri-color-bar.svg" alt="A tri-color bar for decoration">
-  		</div>
-  	</section>
 
-  	<section id="kp-function">
-  		<div class="grid">
-  			<div class="col-10of10">
-  				<div class="code-wrap">
-			  		<div class="large-code-block">kp() {</div>
-			  		<div class="large-code-block">&emsp;&emsp;&emsp;return <span class="bus">business()</span> + <span class="des">design()</span> + <span class="cod">code()</span>;</div>
-			  		<div class="large-code-block">}</div>
-            <div class="code-comment">// Retrieve SFU <span class="bus">Beedie</span> + <span class="des">SIAT</span> + <span class="cod">Computer Science</span> skills</div>
-            <div class="code-comment">// Confused? It means I stayed in school too long. <a id="about-link" href="#about-me">ABOUT ME</a>.</div>
-			  	</div>
-		  	</div>
-	  	</div>
-  		<p>
-        <a id="see-me" href="#EA-intro">SEE ME IN ACTION</a>
-        <span class="icon-circle-down"></span>
-        
-      </p>
-  		
-  	</section>
-
-    <a name="start-portfolio"></a>
-    <section id="EA-intro" class="center dark-bg">
-      <img src="img/ea-tp-white.png" alt="EA logo in white">
-      <h4>Electronic Arts Coop</h4>
-      <p>I designed and developed marketing collateral for an internal engineering team.</p>
-    </section>
-
-    <section id="EA-landing-page-project">
-      <div class="grid">
-        <div class="col-6of10">
-          <div class="figure-block">
-            <div class="positioning-container">
-              <figure>
-                <a href="img/cts-100pct.jpg">
-                  <img src="img/cts-50pct.jpg" alt="Finished CTS landing page">
-                </a>
-              </figure>
-            </div>
-          </div>
+      <div id="p1" class="msg center"
+      data-30p-start="opacity: 1; display: inherit;" data-40p-start="opacity: 0; display: none;" data-anchor-target="#intro">
+        <img id="logo-name" src="img/kp-logo-web.svg" alt="My logo with name in horizontal orientation">
+        <article>
+          <ul class="hashtags">
+            <li>#business</li>
+            <li>#design</li>
+            <li>#code</li>
+            <li>#newgrad<span>(again)</li>
+          </ul>
+          <p>Welcome to my portfolio site. I am a <em>joint major from SFU in Business and Computer Science, minor in Design</em>. That's quite a bit! But I like solving problems that involve people and business - through products that consider their functional and emotional needs.</p>
+        </article>
+        <div data-start="transform: translateY(0px)" data-40p-start="transform: translateY(100%)" data-target-anchor="#intro">
+          <small>SCROLL</small>
+          <p class="darr">&darr;</p>
         </div>
-        <div class="col-4of10">
-          <article id="EA-project1" class="sypnosis">
-           <div class="positioning-container">
-              <small>EA - PROJECT 1 - INDIVIDUAL</small>
-              <h3>Landing Page Design</h3>
-              <p>My first assignment was to improve their brand image to <span class="bus">better sell their services</span> within the organization.</p>
-              <p>This involved <span class="des">re-designing their landing page</span> to project professionalism and credibility of their group.</p>
-              <p>A constraint was to work within their existing logo and style guide, and then to <span class="cod">program it into their coporate wiki</span>.</p>
+      </div>
 
-              <div class="continue">
-                <div class="hashtag-block">
-                  <div><span class="bus">#marketing</span></div>
-                  <div><span class="des">#design</span></div>
-                  <div><span class="cod">#code</span></div>
-                </div>
-                <a href="ea-cts.html">
-                  <div class="cta-block">
-                    <span class="icon-arrow-right2"></span>
-                    <p>LEARN MORE</p>
-                  </div> 
-                </a>
-             </div>
-           </div>
-          </article>
-        </div>      
+      <div id="p2" class=""
+      data-50p-start="opacity: 0" data-60p-start="opacity: 1" data-130p-start="opacity: 1" data-160p-start="opacity: 0; display: inherit;" data-250p-start="display: none;" data-anchor-target="#intro">    
+      </div>
+        <article id="p3" class="msg center dark-bg"
+        data-50p-start="opacity: 0" data-60p-start="opacity: 1" data-anchor-target="#intro">
+
+          <h2>Business<span>(</span>) + Design<span>(</span>) + Code<span>(</span>);</h2>
+
+          <p>I believe the best products and services are able to fuse these three elements together into a perfect harmony - <em>by identifying the right opportunity</em> + <em>empathizing with the user</em> + <em>realizing it into something tangible</em>.</p>
+          
+          <p id="related-work">See some of my related work &darr;</p>
+        </article>
+      
+
+  	</section>
+    <a id="proj1"></a>
+    <h5 class="project-header">PROJECT 1</h5>
+    <section id="EA-intro" class="center dark-bg">
+      <div id="EA-intro-wrap" data-bottom="opacity: 0" data-center="opacity: 1;" data-anchor-target="#EA-intro-wrap">
+        <img id="ea-logo" src="img/ea-tp-white.png" alt="EA logo in white">
+        <header>
+          <h2>Electronic Arts Coop</h2>
+          <p>I designed and developed marketing collateral for an internal engineering team.</p>
+        </header>
+      </div>
+      <div id="EA-article-wrap">
+        <h4>Landing Page Design</h4>
+        <figure>
+          <img id="preview-cts" src="img/cts-50pct-rotate-crop.jpg" alt="Finished CTS landing page preview">
+        </figure> 
+        
+        <article class="sypnosis">
+          <small>[INDIVIDUAL PROJECT]</small>
+          
+          <p>My first assignment was to improve their brand image to better sell their services within the organization. This involved redesigning their landing page to project professionalism and credibility of their group. A constraint was to <em>work within their existing logo and style guide, and then to program it into their coporate wiki.</em></p>
+        </article>
+        <div class="cta-block">
+          <p class="button-text">VIEW PROCESS</p>
+          <a class="button" href="ea-cts.html">&rarr;</a>
+        </div>
+        <ul class="hashtags">
+          <li>#marketing</li>
+          <li>#design</li>
+          <li>#code</li>
+        </ul>
       </div>
     </section>
 
-  	<section id="EA-countdown-project" class="grid">
-  		
-			<div class="col-6of10">
-        <div class="figure-block">
-          <div class="positioning-container">
+    <a id="proj2"></a>
+    <h5 class="project-header">PROJECT 2</h5>
+    <section id="IAT-235" class="center">
+      <img id="siat-logo" src="img/siat.jpg" alt="The SIAT Logo" data-bottom="opacity: 0; transform: translateY(100%);" data-center-bottom="opacity: 0.5; transform: translateY(0%);" data-anchor-target="#siat-logo">
+      <header id="infodsn-header" data-bottom="opacity: 0; transform: translateY(50%);" data-center-bottom="opacity: 1; transform: translate(0%);" data-anchor-target="#siat-logo">
+        <h2>IAT-235: Information Design</h2>
+      </header>
+      <figure>
+        <img id ="iat-235-img" src="img/235-display.jpg" alt="IAT 235 Car Assistant Project">
+      </figure>
+      <article id="IAT-235-project" class="sypnosis">
+        <small>TEAM PROJECT [MY ROLE - DESIGNER AND DEVELOPER]</small>
 
-            <video controls>
-              <source src="img/sprint/04.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              <img src="img/sprint/3.png" alt="3 days remaining in the sprint">
-            </video>
+        <p>In this course, we learned about organizing information into a structure and layout that would assist a user through their task. After studying the information and understanding the intended audience, we considered their context of use in order to develop an information architecture, followed by wireframing and iterating through mockups.</p>
 
+        <p>The final project was to design a car buying assistant to help a college student select an appropriate vehicle for his or her needs. Rather than check off a list of features, we used a question and answer format in a conversational tone to help derive what vehicle would suit them the best. We implemented a responsive (web and mobile) prototype of the design in HTML5 and CSS.</p>
 
-          </div>
-        </div>
-  		</div>
+      </article>
 
-  		<div class="col-4of10">
-        <article id="EA-project2" class="sypnosis">
-          <div class="positioning-container">
-            <small>EA - PROJECT 2 - INDIVIDUAL</small>
-            <h3>Sprint Countdown Timer</h3>
-            <p>Another project was to design and write a <span class="cod">small web app</span> to be displayed on <span class="des">large screen TVs</span> counting down the number of days remaining in the sprint.</p>
-            <p>This would remind the busy engineering team of where they were in the work cycle.</p>
-            <div class="continue">
-              <div class="hashtag-block">
-                <div>&nbsp;</div>
-                <div><span class="des">#design</span></div>
-                <div><span class="cod">#code</span></div>
-              </div>
-              <a href="ea-countdown.html">
-                <div class="cta-block">
-                  <span class="icon-arrow-right2"></span>
-                  <p>LEARN MORE</p>
-                </div>
-              </a>
-           </div>
-          </div>
-        </article>
-  		</div>
-  		
-  	</section>
-
-    <a name="about"></a>
-    <section id="about-me-intro" class="center">
-      <h4>ABOUT ME</h4>
-      <h1>Kelly Pang</h1>
-      <h4>knp1@sfu.ca</h4>
+      <div class="cta-block">
+        <small>(opens in new window)</small>
+        <p class="button-text">VIEW PROTOTYPE</p>
+        <a class="button" href="projects/235/home.html" target="_blank">&rarr;</a>
+      </div>
+      <ul class="hashtags">
+        <li>#design</li>
+        <li>#code</li>
+      </ul>
     </section>
+
     <footer id="about-me">
-      <div id="my-story">
-        <p>Hello. I am a <span class="bus">Business</span> and <span class="cod">Computer Science</span> Joint Major at SFU, with a minor in <span class="des">Design</span>.</p>
-        <p>I like solving problems that affect people, by creating <span class="bus">products</span> that meet their <span class="cod">functional</span> and <span class="des">emotional</span> needs.</p>
+      <div class="grid">
+        <div class="col-5of10">
+          <div class="kp-about">
+            <img src="img/logoicon-flat.svg" alt="Flat logo icon">
+            <h2>about</h2>
+          </div>
+          
+          
+        </div>
+        <div class="5of10">&nbsp;</div>
+      </div>
+      <div class="grid about-container">
+        <div class="col-5of10">
+          <article>
+            <p>The site and my branding was designed and developed by myself. It is a <em>grid-based, responsive design hand-coded with HTML5 and CSS; skrollr.js with velocity.js were used for the scroll effects</em>. I used Adobe tools to create, layout, or modify art assets. Game art in project 1 is from EA.
+            </p>
+            <p>This portfolio is meant to demonstrate some of my skills centered around web and mobile design and front-end prototyping and development.
+            </p>
+        </div>
+        <div class="col-5of10">
+          <article>
+            <p>Check my github for a few examples of my more functional and technical work, or contact me for my resume (kepang.zz@gmail.com).</p>
+            <div class="contact-container">
+              <h5>GITHUB / CONTACT</h5>
+              <a href="https://github.com/kepang" target="_blank"><img class="contact-icon" src="img/contact-github.svg" alt="Github contact icon."></a>
+              <a href="#"><img class="contact-icon" src="img/contact-email.svg" alt="Email contact icon."></a>
+              <a href="#"><img class="contact-icon" src="img/contact-in.svg" alt="LinkedIn contact icon"></a>
+            </div>
+
+          </article>
+        </div>
       </div>
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/velocity.min.js"></script>
     <script src="js/helper.js"></script>
 
-    
+
     <!-- 
       HTML5shiv allows IE below version 9 to work with HTML5 elements.
       Note the conditionals before and after that do not load this script 
