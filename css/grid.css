@@ -116,16 +116,16 @@
 }
 
 /*960*/
-/*@media (max-width: 60em) {
+@media (max-width: 60em) {
   section#EA-intro {
     background-attachment: scroll;
-    background-position: 0%;
+    /*background-position: 0%;*/
   }
 
   section#CTS-header {
     background-attachment: scroll;
   }
-}*/
+}
 
 /*868px*/
 @media (max-width: 54.25em) {
@@ -356,9 +356,9 @@
 
 /*366px*/
 @media (max-width: 22.75em) {
-  body {
+/*  body {
     font-size: 0.85em;
-  }
+  }*/
 
   section#EA-landing-page-project, section#EA-countdown-project {
     height: 52em;
