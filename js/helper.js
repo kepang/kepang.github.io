@@ -1,12 +1,16 @@
 $(document).ready( function() {
 
-	// disable skrollr if using handheld device
-    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 
 	skrollr.init({
 		mobileCheck: function() {
-			return true;
+			return false;
 		}
+
+		// disable skrollr if using handheld device
+    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    		smoothScrolling: false;
+    	}
+
 	});
 	
 	// bind anchor to click
