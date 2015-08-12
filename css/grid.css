@@ -115,6 +115,18 @@
   }
 }
 
+/*960*/
+/*@media (max-width: 60em) {
+  section#EA-intro {
+    background-attachment: scroll;
+    background-position: 0%;
+  }
+
+  section#CTS-header {
+    background-attachment: scroll;
+  }
+}*/
+
 /*868px*/
 @media (max-width: 54.25em) {
   .col-8of10 {
@@ -151,7 +163,7 @@
   }
 
   section#EA-intro {
-    background-position: 52% 0%;   
+    background-position: 57%;
   }
 
   .project-page section {
@@ -345,7 +357,7 @@
 /*366px*/
 @media (max-width: 22.75em) {
   body {
-    font-size: 0.8em;
+    font-size: 0.85em;
   }
 
   section#EA-landing-page-project, section#EA-countdown-project {
@@ -374,5 +386,15 @@
     font-size: 2em;
   }
 
+}
+
+/*500px max height*/
+@media (max-height: 31.25em) {
+  body {
+    font-size: 0.8em;
+  }
+  #p1 article {
+    max-width: 22em;
+  }
 }
 

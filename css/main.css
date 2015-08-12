@@ -483,8 +483,10 @@ section#EA-intro {
   border-top: 1px solid #CCC;
   background: url("../img/lbj-clearmask-opt.jpg");
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: 50% 50%;
   background-attachment: fixed;
+  -webkit-transform: translateZ(1);
+  transform: translateZ(1);
 }
 
   #EA-intro-wrap {
