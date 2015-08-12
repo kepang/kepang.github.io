@@ -1,10 +1,11 @@
 $(document).ready( function() {
 
-	// $("<img />").attr("src", "/img/fifa01-goalie.opt.jpg");
+	// disable skrollr if using handheld device
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 
 	skrollr.init({
 		mobileCheck: function() {
-			return false;
+			return true;
 		}
 	});
 	
