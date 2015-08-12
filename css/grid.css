@@ -119,7 +119,7 @@
 @media (max-width: 60em) {
   section#EA-intro {
     background-attachment: scroll;
-    /*background-position: 0%;*/
+    background-position: 46%;
   }
 
   section#CTS-header {

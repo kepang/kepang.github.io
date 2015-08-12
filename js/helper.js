@@ -1,9 +1,9 @@
 $(document).ready( function() {
 
 	// disable skrollr if using handheld device
-	// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	// 	smoothScrolling: false;
-	// }
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$("#EA-intro-wrap").attr("data-smooth-scrolling", "off");
+	}
 
 	skrollr.init({
 
