@@ -1,0 +1,674 @@
+body {
+	font-family: "Century Gothic", Verdana, sans-serif;
+	font-size: 1em; 
+	color: black;
+	padding: 0 1em;
+	margin-top: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+.top_spacer {
+	background-color: black;
+	color: white;
+	margin: 0;
+
+	/* centering the text */
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+
+	/* styling the 4 corners of the box */
+	/*
+	-moz-border-radius: 4rem 1rem 4rem 1rem;
+	-webkit-border-radius: 4rem 1rem 4rem 1rem;
+	border-radius: 4rem 1rem 4rem 1rem;
+	*/
+}
+
+h1 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+/* Home Button Interaction */
+.home {
+	width: 2.6em;
+	-webkit-transition: opacity 0.25s;
+	transition: opacity 0.25s;
+}
+
+.home:hover {
+	opacity: 0.6;
+}
+
+/* Final page icon */
+
+.final {
+	margin-top: .6em;
+	width: 3em;
+}
+
+/* Category Styling with round bubbles and triangle separator */
+
+.category {
+	font-size: 1.125rem;
+	padding: 0.5em;
+	background-color: white;
+}
+
+.category_container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.category p {
+	/* avoid starting new line for each category */
+	display: inline-block;	
+	margin: 0 0 0.25rem 0;
+
+}
+
+/* The bubbles (circles) that indicate the question number */
+.bubble_container {
+	/*margin-bottom: 1rem;*/
+}
+.bubble {
+	/* Avoid starting a new line */
+	display:inline-block;
+	vertical-align: middle;
+	/* Round corners to make a circle and set w+h for sizing */
+
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;	
+	border-radius: 50%;
+
+	width: 0.8em;
+	height: 0.8em;
+	
+	border-width: 0.1em;
+	border-style: solid;
+}
+
+.separator {
+	width: 0; 
+	height: 0; 
+	border-top: .5rem solid transparent;
+	border-bottom: .5rem solid transparent;
+	border-left: 1.2rem solid rgba(150,150,150,1);
+
+	margin: auto; /* horizontal center */
+	margin-top: 1rem;
+
+}
+
+
+.skip_category {
+	height: 0;
+}
+
+.skip_category a {
+	font-size: .8em;
+	position: relative;
+	bottom: -1.2em;
+	background-color: white;
+	z-index: 1;
+	padding: 1em;	
+	
+	/* styling bottom 2 corners of the box*/
+	-moz-border-radius: 0rem 0rem 0.5rem 0.5rem;
+	-webkit-border-radius: 0rem 0rem 0.5rem 0.5rem;
+	border-radius: 0rem 0rem 0.5rem 0.5rem;	
+}
+
+/* Each category has different colors and styling when inactive and active */
+.bubble_container .active {
+	/* padding: 0.625rem; */
+	width: 1.2em;
+	height: 1.2em;
+
+}
+
+p.active {
+	font-weight: bold;
+	font-size: 1.125em;
+}
+
+/* Different color states for each category bubble */
+
+.basic {
+	border-color: #0099FF;
+	color: #0099FF;
+}
+.basic_used {
+	background-color:#0099FF;
+}
+
+.economic {
+	border-color: green;
+	color:green;
+}
+.economic_used {
+	background-color: green;
+}
+
+.environmental {
+	border-color: #00CC33;
+	color: #00CC33;
+}
+.environmental_used {
+	background-color: #00CC33;
+}
+
+.aspirational {
+	border-color: orange;
+	color: orange;
+}
+.aspirational_used {
+	background-color: orange;
+}
+
+.final {
+	border-color: gray;
+	color: gray;
+}
+/*
+.final_active {
+	border-color: gray;
+	background-color: gray;
+	color: white;
+}
+*/
+
+article {
+	/*
+	text-align: left;
+	margin: 0rem 0; 
+	padding: 0rem; 
+	border: 0px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	*/
+}
+
+aside {
+	font-size: 0.9em;
+}
+
+blockquote {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+
+
+/* -- MAIN IMAGE AREA --
+
+
+- Transparency Overlays the Background Image
+- Question, Aside, Answers, and Navigation are on top
+*/
+
+.overlay { 
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+img {
+	height: auto; 
+	/*width: auto*/;
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+	width: 100%;
+}
+
+figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+/* QUESTION CONTAINER 
+
+CSS Trick to vertical center
+http://css-tricks.com/centering-in-the-unknown/
+
+*/
+.q_container:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.q_container {
+	height: 100%;
+	overflow: visible;
+	font-size: 1rem;
+}
+
+.q_container .wrap {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.q_container .intro_wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 83%;
+}
+
+.q_container nav {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.question {
+	font-size: 2.5em;
+	margin: 0;
+	max-width: 17.5em; /* 16px * 2.5em = 40pt * 17.5em = 700px */
+}
+
+.transparency { 
+	position: absolute; /* Sits in (0,0) of parent div to cover the entire image with white alpha*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: rgba(10,10,10,0.65);
+}
+
+
+
+/* Navigation Buttons */
+
+/*
+.arrow_container:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+*/
+.arrow_container {
+	height: 100%;
+}
+
+.arrow_container a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* 
+
+Triangle Code
+http://css-tricks.com/snippets/css/css-triangle/
+
+*/
+
+.arrow-right {
+	float: right;
+	margin-right: -10em;
+	width: 0; 
+	height: 0%; 
+	border-top: 3.75em solid transparent;
+	border-bottom: 3.75em solid transparent;
+	border-left: 3.75em solid rgba(255,255,255,0.5);
+
+	-webkit-transition: border 0.25s;
+	transition: border 0.25s;
+}
+
+.arrow-left {
+	float: left;
+	margin-left: -10em;
+	width: 0; 
+	height: 0; 
+	border-top: 3.75em solid transparent;
+	border-bottom: 3.75em solid transparent; 
+	border-right: 3.75em solid rgba(255,255,255,0.5); 
+
+	-webkit-transition: border 0.25s;
+	transition: border 0.25s;
+}
+
+.arrow-intro {
+	margin-right: -1em;
+}
+
+
+
+/* END TRIANGLE */
+
+
+/* Hover to indicate clickable button */
+.arrow-left:hover, .arrow-left:active, .arrow-left:focus {
+	border-right: 3.75em solid rgba(255,255,255,1.0); 	
+}
+
+.arrow-right:hover, .arrow-right:active, .arrow-right:focus {
+	border-left: 3.75em solid rgba(255,255,255,1.0);
+}
+
+
+
+/* ANSWERS */
+
+.options {
+	margin: 4em 2em 1em -2em;
+}
+
+.options span {
+	margin-left: 4em;
+}
+
+label {
+	font-size: 1.2em;
+	color: white;
+	
+}
+
+
+/*
+
+Styling Radio Buttons
+http://viralpatel.net/blogs/css-radio-button-checkbox-background/ 
+
+*/
+
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none;
+    margin:0.625rem;
+    /*postion: absolute;*/
+    
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:-0.125rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255,0.5);
+    border-color: #ddd;
+	-moz-border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   /*background-image: none;*/
+   background-color: rgba(255,255,255,.8);
+   /*color: rgba(20,20,20,0.9);*/
+   color: black;
+}
+
+input[type=radio] + label:hover {
+	background-color: rgba(255,255,255,.8);
+	color: black;
+}
+
+input[type=radio] + label:active {
+	background-color: rgba(255,255,255,.8);
+	color: white;
+}
+
+
+/* END RADIO BUTTON STYLE */
+
+
+
+a {
+	color: black; 
+}
+
+a:active, a:hover {
+	color: #888888; 
+	text-decoration: none;
+}
+
+
+
+
+
+/*
+
+INTRO AND FINAL (Recommendation) PAGES HAVE SOME CUSTOM SYTLING
+
+*/
+
+
+
+h2 {
+	font-size: 5em;
+	margin: 0;
+	display: block;
+	margin-top: -0.25em;
+}
+
+
+.intro {
+	font-size: 4em;
+	/* margin-top: 4%; */
+	margin: 0;
+	max-width: 100%;
+}
+
+#sub_intro {
+	margin-bottom: 5em;
+}
+
+.intro_2 {
+	
+	font-size: 2.5em;
+	margin-bottom: 1em;
+	max-width: 100%;
+}
+
+.info {
+	margin-top: 0;
+}
+/*not using this one anymore*/
+
+.outro {
+	font-size: 4em;
+	margin-bottom:10%;
+	margin-top: 10%;
+	max-width: 100%;
+}
+
+.outro_wrap {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 70%;
+	margin-top: -3em;
+}
+
+/**/
+
+h3 { 
+display: block;
+margin-bottom: 15%;
+margin-top: 0%;
+font-size: 2em;
+ }
+
+/*Categories that style images or image like elements on the home page*/
+
+ .cats {
+ 	font-weight: bold;
+ 	font-size: 1.3em;
+  	margin-left: -10%;
+	margin-right: 9em;
+  	text-align: left;
+  	margin-top: 1.2em;
+ }
+
+
+ .bubble-2 {
+	margin-top: 1em;
+	/* Avoid starting a new line */
+	display:inline-block;
+	text-align: left;
+	/* Round corners to make a circle and set w+h for sizing */
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	
+	font-size: 1.5em;
+	margin-left: -10%;
+	margin-right: 2.25em;
+}
+
+
+.pic {
+	margin-left: -40%;
+	margin-right: 3.6em;
+	margin-top: 1.2em;
+}
+
+.pic img {
+	max-width: 8em;
+}
+
+
+/*end of elements styling*/
+
+
+
+ .basic-2 {
+	border-color: #0099FF;
+	color: #0099FF;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+
+.economic-2 {
+	border-color: green;
+	color:green;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+
+
+.environmental-2 {
+	border-color: #00CC33;
+	color: #00CC33;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+
+.aspirational-2 {
+	border-color: orange;
+	color: orange;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+
+
+
+/* Recommedations Page */
+.recommendation_image {
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+}
+
+.recommendation_desc {
+	padding-left: 1em;
+	text-align: left;
+}
+
+.recommendation_desc > #car_type {
+	font-size: 1.5em;
+}
+
+.recommendation_desc > a {
+	color: white;
+}
+
+.recommendation_desc > a:hover {
+	color: #888888;
+}
+
+
+/*
+
+here we edit footer logos
+
+Not working, so not used.
+
+*/
+
+
+#footer-logos {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  	text-align: center;
+  	height:15%;
+  	width:auto;
+  	margin: 0 2em 2em 0;
+
+
+	-moz-border-radius: 1em 1em 0 0;
+	-webkit-border-radius: 1em 1em 0 0;
+  	border-radius: 1em 1em 0 0;
+  	border: 1px solid white;
+}
+
+
+
+/*from CSS3 for web-designers*/
+
+#footer-logos a img {
+  opacity: 1;
+  width: 5em;
+  /*
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";  IE 8 hack 
+  filter: alpha(opacity = 25); /* IE 5-7 hack 
+  -webkit-transition: opacity 0.2s ease-in-out; 
+  -moz-transition: opacity 0.2s ease-in-out; 
+  -o-transition: opacity 0.2s ease-in-out; 
+  transition: opacity 0.2s ease-in-out; 
+
+  */
+  }
+
+#footer-logos a:hover img,
+#footer-logos a:focus img {
+  opacity: 0.5;
+
+  /* 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* IE 8 hack 
+  filter: alpha(opacity = 60); /* IE 5-7 hack */
+  }
+
+
+
+
+

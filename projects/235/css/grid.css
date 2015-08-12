@@ -1,0 +1,269 @@
+[class*="col-"] {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.col-1 {
+	width: 100%;
+
+}
+
+.col-2 {
+	width: 50%;
+}
+
+.col-3 {
+	width: 33.333%;
+}
+
+.col-4 {
+	width: 25%;
+}
+
+.col-5 {
+	width: 20%;
+}
+
+.col-6 {
+	width: 16.666666667%
+
+}
+
+.col-6-intro {
+	width: 16.666666667%;
+}
+
+/* Question Pages use a 10% columns on the outside but one column on the inside */
+.col-10 {
+	width: 10%;
+	height: 100%;
+}
+
+.col-10mid {
+	width: 80%;
+	height: 100%;
+}
+
+
+.col-12 {
+	width: 8.333333333%;
+}
+
+/* Category Separator */
+.col-filler {
+	width: 4.166666667%;
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/* 
+
+RESPONSIVE CODE HERE
+
+*/
+
+/* 68rem * 16 = ~1100px */
+@media (max-width: 68rem) {
+
+	.col-10 {
+		width: 0;
+	}
+
+	.col-10mid {
+		width: 100%;
+	}
+
+	.q_container {
+		font-size: 0.85rem;
+	}
+}
+
+/* 59rem * 16 = ~950px */
+@media (max-width: 59rem) {
+	.category {
+		font-size: 0.85rem;
+	}
+
+	.q_container {
+		font-size: 0.65rem;
+	}
+
+	.recommendation_desc {
+		font-size: 0.7rem;
+	}
+
+	aside {
+		font-size: 1.125em;
+	}
+
+	.arrow-left {
+		margin-left: -7em;
+	}
+
+	.arrow-right {
+		margin-right: -7em;
+	}
+
+	.arrow-intro {
+		margin-right: -1em;
+	}
+
+}
+
+/* 44rem * 16 = ~700px */
+@media (max-width: 44rem) {
+
+	.col-12 {
+		width: 100%;
+	}
+
+	.col-6 {
+		/*width: 20.83333333%;*/
+		width: 25%;
+	}
+
+	body {
+		padding: 0 0;
+	}
+
+	.home {
+		position: absolute;
+		top: 1em;
+		left: 1em;
+	}
+
+	.final {
+		position: absolute;
+		background-color: white;
+		top: 1.3em;
+		right: 1em;
+	}	
+
+	.bubble {
+		border-width: 1px;
+	}
+
+	.category {
+		font-size: .7rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.col-filler {
+		display: none;
+	}
+
+	.q_container {
+		font-size: .6rem;
+	}
+
+	.question {
+		max-width: 20.5em;
+	}
+
+	aside {
+		font-size: 1.4em;
+	}
+
+	.final {
+		display: none;
+	}
+}
+
+/* 39rem * 16pt = 624px */
+@media (max-width: 39rem) {
+	
+	body {
+		background-color: #333333;
+		color: black;
+	}
+
+	.arrow_container {
+		font-size: 0.8rem;
+	}
+
+	.arrow-left {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+	}
+	.arrow-right {
+		position: absolute;
+		
+		top: 30%;
+		right: 50%;
+	}
+
+	.arrow-outro {
+		margin-left: -3em;
+	}
+
+	.wrap {
+		margin-top: 2em;
+		position: relative;
+		top: 100%;
+		max-width: 95%;
+	}
+
+	.q_container .intro_wrap {
+		width: 100%;
+	}
+	.intro_wrap {
+		margin-top: 2em;
+		position: relative;
+		top: 100%;
+		max-width: 95%;
+	}
+
+	.outro_wrap {
+		position: relative;
+		top: 100%;
+		margin-top: 2em;
+		max-width: 90%;
+	}
+
+	label {
+		width: 70%;
+	}
+
+	.bubble-2 {
+		margin: 2.75em 0 0 0.5em;
+		font-size: 1em;
+		float: left;
+
+	}
+
+	.cats {
+		font-size: 1em;
+		margin-top: 2.5em;
+	}
+
+	.pic {
+		display: none;
+	}
+
+}
+
+/* 80rem * 16pt = 1280px */
+@media (min-width: 80rem) { 
+
+
+
+
+}
+
+/* */ 
+
