@@ -6,13 +6,13 @@ $(document).ready( function() {
 	// }
 
 	skrollr.init({
-		smoothScrolling: false,
 
 		mobileCheck: function() {
 			return false;
 		}
 
 	});
+
 	
 	// bind anchor to click
 	$("a[href^=#]").bind("click", function(e) {
