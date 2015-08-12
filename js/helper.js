@@ -1,10 +1,5 @@
 $(document).ready( function() {
 
-	// disable skrollr if using handheld device
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		$("#EA-intro-wrap").attr("data-smooth-scrolling", "off");
-	}
-
 	skrollr.init({
 
 		mobileCheck: function() {
@@ -12,6 +7,11 @@ $(document).ready( function() {
 		}
 
 	});
+
+	// disable skrollr if using handheld device
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$("#EA-intro-wrap").attr("data-smooth-scrolling", "off");
+	}	
 
 	
 	// bind anchor to click
