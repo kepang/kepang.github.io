@@ -1,5 +1,7 @@
 $(document).ready( function() {
 
+	// $("<img />").attr("src", "/img/fifa01-goalie.opt.jpg");
+
 	skrollr.init({
 		mobileCheck: function() {
 			return false;
