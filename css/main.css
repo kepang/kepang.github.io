@@ -349,6 +349,8 @@ section#intro {
   #p1 div {
     margin-top: -1em;
     opacity: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-animation: fadein 0.5s 1s forwards;
     animation: fadein 0.5s 1s forwards;
   }
