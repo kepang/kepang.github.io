@@ -4,6 +4,11 @@ $(document).ready( function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
 		$("body").addClass("desktop");
 
+		$(".home nav.me").attr("data-start", "transform:translateY(-5em)");
+		$(".home nav.me").attr("data-40p-start", "transform:translateY(-5em)");
+		$(".home nav.me").attr("data-60p-start", "transform:translateY(0em)");
+		$(".home nav.me").attr("data-anchor-target", "#intro");
+
 		$("#p1").attr("data-40p-start", "opacity:0; display:none; z-index:-1");
 
 		$("#p2").attr("data-40p-start", "opacity:0; display:inherit");
