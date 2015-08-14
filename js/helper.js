@@ -9,7 +9,13 @@ $(document).ready( function() {
 		$(".home nav.me").attr("data-60p-start", "transform:translateY(0em)");
 		$(".home nav.me").attr("data-anchor-target", "#intro");
 
+		$("#p1").attr("data-30p-start", "opacity:1; display:inherit; z-index:1");
 		$("#p1").attr("data-40p-start", "opacity:0; display:none; z-index:-1");
+		$("#p1").attr("data-anchor-target", "#intro");
+		
+		$("#scroll-box").attr("data-start", "transform:translateY(0px)");
+		$("#scroll-box").attr("data-40p-start", "transform:translateY(100%)");
+		$("#scroll-box").attr("data-target-anchor", "#intro");
 
 		$("#p2").attr("data-40p-start", "opacity:0; display:inherit");
 		$("#p2").attr("data-45p-start", "opacity:1; display:inherit");
