@@ -117,7 +117,7 @@
 
 /*960*/
 @media (max-width: 60em) {
-  section#EA-intro {
+  .desktop section#EA-intro {
     background-position: 46%;
   }
 }
@@ -157,7 +157,7 @@
     margin: 1em;
   }
 
-  section#EA-intro {
+  .desktop section#EA-intro {
     background-position: 57%;
   }
 

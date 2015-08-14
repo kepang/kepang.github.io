@@ -504,12 +504,13 @@ section#EA-intro {
   border-top: 1px solid #CCC;
   background: url("../img/lbj-clearmask-opt.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
   background-attachment: scroll;
 }
 
   .desktop #EA-intro {
     background-attachment: fixed;
+    background-position: 50%;
   }
 
   #EA-intro-wrap {
