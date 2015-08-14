@@ -363,7 +363,7 @@ section#intro {
     background-color: gold;
   }
 
-  #p2 {
+  .desktop #p2 {
     background: url("../img/logo-blur-cover2.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -380,8 +380,11 @@ section#intro {
     width: 100%;
     max-width: 49em;
     opacity: 0;
-    color: white;
     text-align: left;
+  }
+
+  .desktop #p3 {
+    color: white;
   }
 
   #p3 h2 {
@@ -405,9 +408,13 @@ section#intro {
   }
 
   #p3 p#related-work {
-    color: gold;
+    color: goldenrod;
     font-size: normal;
     margin-left: 2em;
+  }
+
+  .desktop #p3 p#related-work {
+    color: gold;
   }
 
 /*--*/
@@ -484,8 +491,12 @@ section#EA-intro {
   background: url("../img/lbj-clearmask-opt.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
+
+  .desktop #EA-intro {
+    background-attachment: fixed;
+  }
 
   #EA-intro-wrap {
     padding: 5em 1em;
@@ -710,13 +721,17 @@ section#CTS-header {
   background: url("../img/fifa01-goalie.opt.jpg");
   background-size: cover;
   background-position: 80%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 34em;
   color: white;
   margin: 0;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
+
+  .desktop #CTS-header {
+    background-attachment: fixed;
+  }
 
   #CTS-header p, #CTS-story-3 p {
     color: #D7DADB;

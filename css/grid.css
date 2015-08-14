@@ -118,12 +118,7 @@
 /*960*/
 @media (max-width: 60em) {
   section#EA-intro {
-    background-attachment: scroll;
     background-position: 46%;
-  }
-
-  section#CTS-header {
-    background-attachment: scroll;
   }
 }
 

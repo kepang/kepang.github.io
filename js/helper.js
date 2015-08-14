@@ -1,14 +1,29 @@
 $(document).ready( function() {
 
-	// disable skrollr if using handheld device
+	// Progressively enhance skrollr if not on mobile
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
-		$("#EA-intro-wrap").attr("data-smooth-scrolling", "off");
-		$("#EA-intro-wrap").attr("data-bottom-top", "opacity:0");
-		$("#EA-intro-wrap").attr("data-center-top", "opacity:1");
+		$("body").addClass("desktop");
+
+		$("#p1").attr("data-40p-start", "opacity:0; display:none; z-index:-1");
+
+		$("#p2").attr("data-40p-start", "opacity:0; display:inherit");
+		$("#p2").attr("data-45p-start", "opacity:1; display:inherit");
+		$("#p2").attr("data-160p-start", "opacity:0; display:none");
+		$("#p2").attr("data-250p-start", "opacity:0; display:none");
+
+		$("#p3").addClass("dark-bg");
+
+		$("#EA-intro-wrap").attr("data--30p-bottom-top", "opacity:0");
+		$("#EA-intro-wrap").attr("data-center", "opacity:1");
 		$("#EA-intro-wrap").attr("data-anchor-target", "#EA-intro-wrap");
 
-		$("#p1").attr("data-40p-start", "opacity:0");
+		$("#siat-logo").attr("data-bottom-top", "opacity:0");
+		$("#siat-logo").attr("data-center-top", "opacity:0.5");
+		$("#siat-logo").attr("data-anchor-target", "#siat-logo");
 
+		$("#infodsn-header").attr("data-bottom-top", "opacity:0");
+		$("#infodsn-header").attr("data-center-top", "opacity:1");
+		$("#infodsn-header").attr("data-anchor-target", "#infodsn-header");
 	}
 
 
@@ -23,7 +38,7 @@ $(document).ready( function() {
 	});
 
 	
-	// bind anchor to click
+	// bind anchor to click for nav scrolling
 	$("a[href^=#]").bind("click", function(e) {
 		e.preventDefault();
 		e.stopPropagation();

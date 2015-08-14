@@ -9,8 +9,10 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
+<!--     <nav class="me"
+    data-start="opacity: 0; z-index:-20" data-40p-start="opacity: 0" data-60p-start="opacity: 1; z-index:100;" data-anchor-target="#intro"> -->
     <nav class="me"
-    data-start="opacity: 0; z-index:-20" data-40p-start="opacity: 0" data-60p-start="opacity: 1; z-index:100;" data-anchor-target="#intro">
+    data-start="transform: translateY(-5em)" data-40p-start="transform: translateY(-5em)" data-60p-start="transform: translate(0em); z-index:100;" data-anchor-target="#intro">    
       <ul>
         <div class="nav-home-items">
           <a href="index.html">
@@ -35,8 +37,8 @@
 
   	<section id="intro" class="grid">
 
-      <div id="p1" class="msg center" data-smooth-scrolling="off" 
-      data-30p-start="opacity: 1; display: inherit;" data-40p-start="display: none;" data-anchor-target="#intro">
+      <div id="p1" class="msg center" 
+      data-30p-start="opacity: 1; display: inherit; z-index:1" data-40p-start="display: none; z-index: -1" data-anchor-target="#intro">
         <img id="logo-name" src="img/kp-logo-web.svg" alt="My logo with name shined up with gradients (for the web).">
         <article>
           <ul class="hashtags">
@@ -51,23 +53,17 @@
           <small>SCROLL</small>
           <p class="darr">&darr;</p>
         </div>
+      </div>  
+      <div id="p2">      
       </div>
+      <article id="p3" class="msg center" data-40p-start="opacity: 1; display: none" data-50p-start="display: inherit" data-anchor-target="#intro">
 
-<!--       <div id="p2" data-smooth-scrolling="off"
-      data-50p-start="opacity: 0" data-60p-start="opacity: 1" data-130p-start="opacity: 1" data-160p-start="opacity: 0; display: inherit;" data-250p-start="display: none;" data-anchor-target="#intro" > -->    
-      <div id="p2" data-smooth-scrolling="off"
-      data-50p-start="display: none; opacity: 1" data-60p-start="display: inherit" data-130p-start="display: inherit" data-160p-start="display: none;" data-250p-start="display: none;" data-anchor-target="#intro" >
-      </div>
-        <article id="p3" class="msg center dark-bg" data-smooth-scrolling="off" data-40p-start="opacity: 0" data-50p-start="opacity: 1" data-anchor-target="#intro">
+        <h2>Business<span>(</span>) + Design<span>(</span>) + Code<span>(</span>);</h2>
 
-          <h2>Business<span>(</span>) + Design<span>(</span>) + Code<span>(</span>);</h2>
-
-          <p>I believe the best products and services are able to fuse these three elements together into a perfect harmony - <em>by identifying the right opportunity</em> + <em>empathizing with the user</em> + <em>realizing it into something tangible</em>.</p>
-          
-          <p id="related-work">See some of my related work &darr;</p>
-        </article>
-      
-
+        <p>I believe the best products and services are able to fuse these three elements together into a perfect harmony - <em>by identifying the right opportunity</em> + <em>empathizing with the user</em> + <em>realizing it into something tangible</em>.</p>
+        
+        <p id="related-work">See some of my related work &darr;</p>
+      </article>
   	</section>
     <a id="proj1"></a>
     <h5 class="project-header">PROJECT 1</h5>
