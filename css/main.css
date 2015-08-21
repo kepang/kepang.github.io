@@ -246,7 +246,7 @@ section#intro {
   #intro em {
     font-size: 1.125em;
     font-weight: bold;
-    font-style: none;
+    font-style: normal;
   }
 
   .msg {
@@ -423,7 +423,6 @@ section#intro {
 
   #p3 p#related-work {
     color: goldenrod;
-    font-size: normal;
     margin-left: 2em;
   }
 
