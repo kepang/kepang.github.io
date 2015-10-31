@@ -66,11 +66,11 @@ nav.me ul {
   font-size: 0.8em;
 }
 
-nav.me ul div:first-child {
+.nav-home-items, .nav-ea-items {
   float: left;
 }
 
-nav.me ul div:last-child {
+.nav-contact, .nav-ea-contact {
   float: right;
 }
 

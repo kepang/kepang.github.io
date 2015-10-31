@@ -271,12 +271,12 @@
 /* 604px */
 @media (max-width: 37.75em) {
   /*(Nav Bar)*/
-  nav.me ul div.nav-home-items {
+  .nav-home-items {
     float: none;
     text-align: center;
   }
 
-  nav.me ul div.nav-contact {
+  .nav-contact {
     display: none;
   }
 
