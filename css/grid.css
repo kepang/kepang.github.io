@@ -103,6 +103,12 @@
     font-size: 2em;
   }
 
+  #android {
+    background: 
+      url("../img/Android_Robot_100.png") 101% top no-repeat,
+      linear-gradient(-135deg, yellowgreen, goldenrod 160%);
+  }
+
   #IAT-235 figure {
     margin-bottom: 0.5em;
   }
@@ -354,6 +360,10 @@
 /*  body {
     font-size: 0.85em;
   }*/
+
+  nav.me ul {
+    font-size: 0.707em;
+  }
 
   section#EA-landing-page-project, section#EA-countdown-project {
     height: 52em;

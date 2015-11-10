@@ -590,6 +590,7 @@ section#EA-landing-page-project {
 section#IAT-235 {
   padding: 1em;
   border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
 
   background-color: #fff; 
   background-image: 
@@ -629,7 +630,7 @@ section#IAT-235 {
 /*--*/
 /*footer*/
 
-  #about-me {
+#about-me {
   padding: 4em 10%;
   background-image: linear-gradient(#bbb, #eee);
 }
@@ -682,6 +683,52 @@ section#IAT-235 {
     max-width: 3em;
     margin: 0 0.5em;
   }
+
+/* bonus content */
+
+#android {
+  background: 
+    url("../img/Android_Robot_100.png") 104% top no-repeat,
+    linear-gradient(-135deg, yellowgreen, goldenrod 160%);
+}
+
+.bonus-item {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 53em;
+}
+
+.bonus-item div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em;
+}
+
+.bonus-item a {
+  color: black;
+}
+
+.bonus-item h3 {
+  margin: 0;
+}
+
+.bonus-item ul, .bonus-item p {
+  font-size: 0.8em;
+}
+
+.bonus-item figure {
+  margin: 2em 0;
+}
+
+.bonus-item img {
+  width: 100%;
+  max-width: 35em;
+}
+
+
+#footer-spacer {
+  height: 5em;
+}
 
 
 /*--*/
