@@ -24,17 +24,29 @@ $(document).ready( function() {
 
 		$("#p3").addClass("dark-bg");
 
-		$("#EA-intro-wrap").attr("data--30p-bottom-top", "opacity:0");
-		$("#EA-intro-wrap").attr("data-center", "opacity:1");
+		$("#EA-intro-wrap").attr("data--30p-bottom-top", "opacity:0; transform:scale(0.5)");
+		$("#EA-intro-wrap").attr("data-center", "opacity:1; transform:scale(1)");
 		$("#EA-intro-wrap").attr("data-anchor-target", "#EA-intro-wrap");
 
 		$("#siat-logo").attr("data-bottom-top", "opacity:0");
 		$("#siat-logo").attr("data-center-top", "opacity:0.5");
 		$("#siat-logo").attr("data-anchor-target", "#siat-logo");
 
-		$("#infodsn-header").attr("data-bottom-top", "opacity:0");
-		$("#infodsn-header").attr("data-center-top", "opacity:1");
+		$("#infodsn-header").attr("data-bottom-top", "opacity:0; transform:scale(0.8)");
+		$("#infodsn-header").attr("data-center-top", "opacity:1; transform:scale(1.0)");
 		$("#infodsn-header").attr("data-anchor-target", "#infodsn-header");
+
+		$("#shuffle-h3").attr("data-bottom-top", "opacity:0; transform:translateX(-1.5em)");
+		$("#shuffle-h3").attr("data-center-top", "opacity:1; transform:translateX(0)");
+		$("#shuffle-h3").attr("data-anchor-target", "#shuffle-h3");
+
+		$("#shuffle-ul").attr("data-bottom-top", "opacity:0");
+		$("#shuffle-ul").attr("data-center-top", "opacity:1");
+		$("#shuffle-ul").attr("data-anchor-target", "#shuffle-ul");
+
+		$("#bvd-wf-figure").attr("data-bottom-top", "opacity:0; transform:scale(0.7)");
+		$("#bvd-wf-figure").attr("data-center-top", "opacity:1; transform:scale(1)");
+		$("#bvd-wf-figure").attr("data-anchor-target", "#bvd-wf-figure");
 	}
 
 

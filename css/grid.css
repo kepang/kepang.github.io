@@ -391,6 +391,10 @@
     font-size: 2em;
   }
 
+  .bonus-item {
+    padding: 1em;
+  }
+
 }
 
 /*500px max height*/
