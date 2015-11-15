@@ -201,7 +201,7 @@
   }
 
   article.sypnosis {
-    padding: 0 2em;
+    padding: 0 0.5em;
   }
 
 }
@@ -344,12 +344,22 @@
   }
 
   #about-me {
-    padding: 4em 2em;
+    padding: 4em 0.5em;
   }
 
   #EA-intro figure, #IAT-235 figure {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  #android .bonus-item div:first-child {
+    text-align: center;
+  }
+
+  video {  
+    width:75%; 
+    height:auto;
+    margin: 0 auto;
   }
 
 }

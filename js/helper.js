@@ -1,5 +1,17 @@
 $(document).ready( function() {
 
+
+	var hash = window.location.hash.substr(1);
+
+	// fade effect when transitioning from EA project page
+	if (hash == "EA-article-wrap") {
+		$("#EA-intro").css({"-webkit-animation": "fadein 2s", "animation": "fadein 2s"});
+	}
+
+	if (hash == "proj2") {
+		$("#infodsn-header").css({"-webkit-animation": "fadein 2s", "animation": "fadein 2s"});
+	}	
+
 	// Progressively enhance skrollr if not on mobile
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
 		$("body").addClass("desktop");
@@ -47,7 +59,13 @@ $(document).ready( function() {
 		$("#bvd-wf-figure").attr("data-bottom-top", "opacity:0; transform:scale(0.7)");
 		$("#bvd-wf-figure").attr("data-center-top", "opacity:1; transform:scale(1)");
 		$("#bvd-wf-figure").attr("data-anchor-target", "#bvd-wf-figure");
+
+		$("#caselet-figure").attr("data-bottom-top", "opacity:0; transform:scale(0.7)");
+		$("#caselet-figure").attr("data-center-top", "opacity:1; transform:scale(1)");
+		$("#caselet-figure").attr("data-anchor-target", "#caselet-figure");		
 	}
+
+
 
 
 

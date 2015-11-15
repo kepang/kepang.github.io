@@ -81,7 +81,12 @@ nav.me li {
   margin: 0 .5em;
   min-width: 7em;
   text-align: center;
+  vertical-align: bottom;
+}
 
+nav.me li img {
+  max-width: 4em;
+  vertical-align: middle;
 }
 
 /* Links */
@@ -207,7 +212,7 @@ em {
 section#intro {
   position: relative;
   height: 250vh;
-  background-image: radial-gradient(white, white, #DDD);
+  /*background-image: radial-gradient(white, white, #DDD);*/
 }
 
   #intro #logo-name {
@@ -223,8 +228,6 @@ section#intro {
   }
 
   #intro em {
-    font-size: 1.125em;
-    font-weight: bold;
     font-style: normal;
   }
 
@@ -373,7 +376,7 @@ section#intro {
     width: 100%;
     max-width: 49em;
     opacity: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .desktop #p3 {
@@ -391,7 +394,7 @@ section#intro {
 
   #p3 p {
     font-size: 1.1em;
-    margin: 1em 0 0 0em;
+    margin: 1em auto 0em;
     text-align:left;
     max-width: 33em;
   }
