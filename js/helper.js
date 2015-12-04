@@ -9,7 +9,7 @@ $(document).ready( function() {
 	}
 
 	if (hash == "proj2") {
-		$("#infodsn-header").css({"-webkit-animation": "fadein 2s", "animation": "fadein 2s"});
+		$("#IAT-235	").css({"-webkit-animation": "fadein 2s", "animation": "fadein 2s"});
 	}	
 
 	// Progressively enhance skrollr if not on mobile
@@ -64,9 +64,6 @@ $(document).ready( function() {
 		$("#caselet-figure").attr("data-center-top", "opacity:1; transform:scale(1)");
 		$("#caselet-figure").attr("data-anchor-target", "#caselet-figure");		
 	}
-
-
-
 
 
 	skrollr.init({
