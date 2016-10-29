@@ -48,6 +48,10 @@ $(document).ready( function() {
 		$("#infodsn-header").attr("data-center-top", "opacity:1; transform:scale(1.0)");
 		$("#infodsn-header").attr("data-anchor-target", "#infodsn-header");
 
+		$("#logos-figure").attr("data-bottom-top", "opacity:0; transform:scale(0.7)");
+		$("#logos-figure").attr("data-center-top", "opacity:1; transform:scale(1)");
+		$("#logos-figure").attr("data-anchor-target", "#logos-figure");
+
 		$("#shuffle-h3").attr("data-bottom-top", "opacity:0; transform:translateX(-1.5em)");
 		$("#shuffle-h3").attr("data-center-top", "opacity:1; transform:translateX(0)");
 		$("#shuffle-h3").attr("data-anchor-target", "#shuffle-h3");

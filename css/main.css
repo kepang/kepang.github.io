@@ -673,6 +673,11 @@ section#IAT-235 {
     linear-gradient(-135deg, yellowgreen, goldenrod 160%);
 }
 
+#logos {
+  padding-top: 4em;
+  background: linear-gradient(90deg, #CED3D6 30%, white);
+}
+
 #baby-vs-dog {
   margin-top: 4em;
 }
