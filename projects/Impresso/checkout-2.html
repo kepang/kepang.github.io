@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Checkout 2 (Customer Info)</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">	
+		<link rel="stylesheet" href="css/iconmoon.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>		
+	</head>
+	<body class="checkout-background">
+
+	  	<header class="impresso-header">
+			<nav class="left-header">
+				<a id="hamburger-menu" href="#">
+					<span class="icon-menu"></span>
+				</a>
+				<a id="logo" href="home.html"><img src="img/logo.svg" alt="This is the Impresso Logo" width="60" height="60"></a>
+
+				<div class="main-nav">
+					<a href="home.html#product-categories">PRODUCTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#events">EVENTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#contact">CONTACT</a>
+				</div>
+			</nav>
+			<div class="right-header">
+				<div id="search-button" class="sub-nav">
+					<span class="icon-search"></span>
+				</div>
+				<div id="shopping-cart" class="sub-nav">
+					<a href="item-detail-cart.html">
+						<span class="icon-cart"></span>
+					</a>
+				</div>
+			</div>
+			<div class="clear-float"></div>
+	  	</header>
+
+
+	  	<section id="clear-header">	
+	  	</section>
+
+	  	<section id="checkout-title" class="grid">
+	  		<div class="col-10of10">
+	  			<nav>
+	  				<a href="checkout-1.html"><span class="icon-arrow-left2"></span></a>
+	  			</nav>
+	  			<h2>Welcome, Guest</h2>
+	  			<span class="icon-lock secure"></span>
+	  		</div>
+	  	</section>
+
+
+	  	<div class="checkout-block-wrapper">
+
+		  	<div class="checkout-block">
+				<section id="checkout-billing-info">
+					<h4>YOUR INFORMATION</h4>
+					<form method="post" action="#">
+						<label id="label-email" for="email">Personal Info</label>
+						<input type="email" id="email" placeholder="Email">
+						<input type="text" id="phone" placeholder="Phone">
+						<label id="label-billing-address" for="billing-address">Billing Address</label>
+						<input type="text" id="billing-address" placeholder="Address">
+						<input type="text" id="city" placeholder="City">
+						<select id="province">
+							<option value="BC">BC</option>
+							<option value="AB">AB</option>
+							<option value="ON">ON</option>
+						</select>
+						<input type="text" id="country" placeholder="Country">
+						<input type="text" id="postal-code" placeholder="Postal Code">
+						<div>
+							<input type="checkbox" id="same-shipping-check-box" name="shipping-info" value="same" checked> 
+							<label id="label-shipping-address">Ship to the same address.</label>
+						</div>
+					</form>
+
+				</section>
+				
+			</div>
+
+			<div class="checkout-block">
+				<section id="checkout-payment">				
+					<h4>PAYMENT</h4>
+					<form method="post" action="#">
+						<label id="label-cc-name" for="cc-name">Name</label>
+						<input type="text" id="cc-name" placeholder="Name">
+						<label id="label-cc-info" for="cc-number">Credit Card Info</label>
+						<input type="text" id="cc-number" placeholder="Credit Card Number">
+						<input type="text" id="ccv" placeholder="CCV">
+						<!-- <label for="expiry">Expiry Date (mmyy)</label> -->
+						<input type="text" id="expiry" placeholder="Expiry (mmyy)">
+						<!-- <button type="submit">Submit</button> -->
+						
+					</form>
+
+					<div class="checkout-payment-total">
+						<h2>$169.98</h2>
+						<p>2 items in your cart.</p>						
+					</div>
+					<div class="checkout-next">
+						<a class="button cta" href="checkout-3.html">NEXT</a>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+	<section id="slide-out" class="so-hidden">
+		<input type="search" name="search-impresso" placeholder="Search">
+		<h3>MENU</h3>
+		<nav>
+			<a href="home.html#product-categories">PRODUCTS</a>
+			<a href="home.html#events">EVENTS</a>
+			<a href="home.html#contact">CONTACT</a>
+		</nav>
+	</section>
+
+    <script src="js/slide-out.js"></script>
+    
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+      Note the conditionals before and after that do not load this script 
+      if browser is greater-than or equal-to IE9.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+
+
+	</body>
+</html>

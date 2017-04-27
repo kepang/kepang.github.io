@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Checkout 3 (Place Order)</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/iconmoon.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>					
+	</head>
+	<body class="checkout-background">
+
+	  	<header class="impresso-header">
+			<nav class="left-header">
+				<a id="hamburger-menu" href="#">
+					<span class="icon-menu"></span>
+				</a>
+				<a id="logo" href="home.html"><img src="img/logo.svg" alt="This is the Impresso Logo" width="60" height="60"></a>
+
+				<div class="main-nav">
+					<a href="home.html#product-categories">PRODUCTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#events">EVENTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#contact">CONTACT</a>
+				</div>
+			</nav>
+			<div class="right-header">
+				<div id="search-button" class="sub-nav">
+					<span class="icon-search"></span>
+				</div>
+				<div id="shopping-cart" class="sub-nav">
+					<a href="item-detail-cart.html">
+						<span class="icon-cart"></span>
+					</a>
+				</div>
+			</div>
+			<div class="clear-float"></div>
+	  	</header>
+
+
+	  	<section id="clear-header">	
+	  	</section>
+
+	  	<section id="checkout-title" class="grid">
+	  		<div class="col-10of10">
+	  			<nav>
+	  				<a href="checkout-2.html"><span class="icon-arrow-left2"></span></a>
+	  			</nav>
+	  			<h2>Almost There!</h2>
+	  			<span class="icon-lock secure"></span>
+	  		</div>
+	  	</section>	  	
+
+	  	<div class="checkout-block-wrapper">
+
+			<div class="checkout-block">
+				<section id="checkout-place">				
+					<h4>CONFIRM YOUR ADDRESS</H4>
+					<h2>Billy Neuvirth</h2>
+					<p>3642 Camping Way</p>
+					<p>Burnaby, BC CANADA</p>
+					<p>V3K 5L2</p>
+					<p>Estimated arrival on March 9 (Monday). After you place your order, we'll send you an email with all the tracking details you need.</p>
+				</section>
+			</div>
+
+			<div class="checkout-block">
+				<section id="checkout-review">				
+					<h4>AND CONFIRM YOUR CART</h4>
+					<div class="checkout-confirmation-cart-item">
+						<img src="img/Coava-Disk-small.jpg" alt="A picture of a Coava Disk on a table.">
+						<div class="cart-item">
+							<p>(Qty 1)</p>
+							<p>Coava Disk</p>
+							<h4>$19.99</h4>
+							<a class="remove" href="#"><span class="icon-bin"></span></a>
+						</div>
+					</div>
+					
+					<div class="checkout-confirmation-cart-item last-cart-item">
+						<img src="img/saeco-minuto-small.jpg" alt="A picture of a Saeco Minute espresso machine." >
+						<div class="cart-item">
+							<p>(Qty 1)</p>
+							<p>Saeco Minuto</p>
+							<h4>$149.99</h4>
+							<a class="remove" href="#"><span class="icon-bin"></span></a>
+						</div>
+					</div>
+
+					<div class="checkout-review-total">
+						<h2>$169.98</h2>
+					</div>
+					<div class="checkout-next">
+						<a class="button cta" href="thankyou.html">PLACE ORDER</a>
+					</div>
+				</section>
+			</div>
+		</div>
+
+	<section id="slide-out" class="so-hidden">
+		<input type="search" name="search-impresso" placeholder="Search">
+		<h3>MENU</h3>
+		<nav>
+			<a href="home.html#product-categories">PRODUCTS</a>
+			<a href="home.html#events">EVENTS</a>
+			<a href="home.html#contact">CONTACT</a>
+		</nav>
+	</section>
+
+    <script src="js/slide-out.js"></script>
+    
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+      Note the conditionals before and after that do not load this script 
+      if browser is greater-than or equal-to IE9.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+
+		
+	</body>
+</html>

@@ -1,0 +1,226 @@
+*, *::after, *::before{
+	-webkitbox-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^='col-']{
+	float: left;
+	/*padding: 0;*/
+	text-align: center;
+}
+
+.col-1of10{
+	width: 10%;
+}
+
+
+.col-2of10{
+	width:  20%;
+}
+
+.col-33of10{
+	width: 33%;
+}
+
+.col-3of10{
+	width: 30%;
+}
+
+	
+.col-4of10{
+	width: 40%;
+}
+
+
+.col-5of10{
+	width: 50%;
+}
+
+
+.col-6of10{
+	width: 60%;
+}
+
+
+.col-7of10{
+	width: 70%;
+}
+
+
+.col-8of10{
+	width: 80%;
+}
+
+
+.col-9of10{
+	width: 90%;
+}
+
+
+.col-10of10{
+	width: 100%;
+}
+
+
+.grid:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+@media (max-width: 65rem){
+
+	.about-image{
+		padding: 7em 0em 2em 0em;
+	}
+
+	.thankyou-background {
+		background-position: 50%;
+	}
+
+	.col-4of10{
+		width: 100%;
+	}
+
+	.col-3of10 {
+		width: 50%;
+	}
+
+	.saeco-minuto-feature{
+		padding: 7em 2em 2em 2em;
+	}
+
+	#product-categories {
+		padding-top: 13em;
+	}
+
+	#site-map, #social-media {
+		margin-top: 5em;
+	}
+
+}
+
+
+@media (max-width: 59.375rem) {
+
+	.espresso-feature-bg {
+		background-position: 60%;
+	}
+
+	#about-espresso {
+		padding: 2em;
+		left: 0;
+	}
+}
+
+@media (max-width: 42.4375rem) {
+	.checkout-block {
+		min-height: 0;
+		margin: 0.5em 0;
+	}
+
+	.col-33of10 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 40rem){	
+	.col-2of10{
+		display: inline-block;
+		clear: both;
+		width: 100%;
+	}
+
+	.col-33of10{
+		display: inline-block;
+		clear: both;
+		width: 100%;
+	}
+
+	.col-4of10{
+		width: 100%;
+	}
+
+	.col-5of10{
+		width: 100%;
+	}
+
+	.col-6of10{
+		width: 100%;
+	}
+
+	#about-impresso {
+		top: 13em;
+		margin: 0 2em;
+	}
+
+	#product-categories {
+		padding-top: 0em;
+	}
+
+	#thankyou {
+		margin: 0 2em;
+		top: 9em;
+		width: initial;
+	}
+
+	.thankyou-background {
+		background-position: 75%;
+	}
+}
+
+
+@media (max-width: 35.438rem) {
+	.main-nav {
+		display: none;
+	}
+
+	#search-button {
+		display: none;
+	}
+
+	#hamburger-menu {
+		display: inline-block;
+	}
+
+	#logo>img {
+		position: absolute;
+		top: 1em;
+		left: 50%;
+		margin-left: -30px;
+	}
+
+	#hamburger-menu {
+		padding-bottom: 0;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	#item-detail-cart {
+		width: 100%;
+	}
+
+	.checkout-confirmation-cart-item {
+		width: 100%;
+		font-size: 1.5em;
+	}
+
+	#add-to-cart #about-saeco,
+	#add-to-cart .product-img,
+	#add-to-cart #item-description {
+		display: none;
+	}
+
+}
+
+@media(max-width: 23.5rem) {
+	.col-3of10 {
+		width: 100%;
+	}
+
+}
+

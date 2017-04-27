@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Impresso Style Guide</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="css/iconmoon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top"></div>
+    <h1 class="title">P1 Style Guide</h1>
+    <nav>
+      <a class="button cta" href="#colors">COLORS</a>
+      <a class="button cta" href="#type">TYPOGRAPHY</a>
+      <a class="button cta" href="list">LIST</a>
+      <a class="button cta" href="#forms">FORMS</a>
+      <a class="button cta" href="#buttons">BUTTONS</a>
+      <a class="button cta" href="#images">IMAGE LINKS</a>
+      <a class="button cta" href="#bread-crumbs">BREAD CRUMBS</a>
+      <a class="button cta" href="#groupings">GROUPINGS</a>
+    </nav>
+    <!-- Try to ensure that each element has its own portion of the page -->
+    <section id="colors">
+      <div class="wrapper">
+        <h2>Brand Colors</h2>
+        <div class="color-box red">
+          <p>Red</p>
+          <p>#800000</p>
+        </div>
+        <div class="color-box dark-red">
+          <p>Dark Red</p>
+          <p>#490003</p>
+        </div>
+        <div class="color-box brick">
+          <p>Brick</p>
+          <p>#E32805</p>
+        </div>
+        <div class="color-box chocolate">
+          <p>Chocolate</p>
+          <p>#D2691E</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h2>Text Blacks and Greys</h2>
+        <div class="color-box black">
+          <p>Black</p>
+          <p>#000000</p>
+        </div>
+        <div class="color-box dark-grey">
+          <p>Dark Grey</p>
+          <p>#333333</p>
+        </div>
+        <div class="color-box middle-grey">
+          <p>Middle Grey</p>
+          <p>#999999</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="type">
+      <h2>Typography</h2>
+      <p>The H1 header uses <em>Gafata</em> in our primary red. The copy text uses <em>Canaro</em>.</p>
+      <p>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <p><a href="#">This is a link</a>. </p>
+
+      <h4>Sample Code</h4>
+      <p><code>&lt;p&gt; ... &lt;/p&gt;</code></p>
+      <p><code>&lt;a href="#"&gt;...&lt;/a&gt;</code></p>
+   
+    </section>
+
+
+    <section id="list">
+      <h2>Lists</h2>
+      <div class="wrapper box">
+      <li>This</li>
+      <li>is</li>
+      <li>a</li>
+      <li>list</li>
+
+      <h4>Sample Code</h4>
+      <code>&lt;li&gt;...&lt;/li&gt;</code>
+      </div>
+    </section>
+<!--       <h3>Header Examples and Usage</h3>
+ -->    
+
+    <section id="header-styles">
+      <div class="wrapper box">
+        <h1>Header Level 1</h1>
+        <code>&lt;h1&gt;...&lt;/h1&gt;</code>
+      </div>
+      <div class="wrapper box">
+        <h2>Header Level 2</h2>
+        <code>&lt;h2&gt;...&lt;/h2&gt;</code>        
+      </div>
+      <div class="wrapper box">
+        <h3>Header Level 3</h3>
+        <code>&lt;h3&gt;...&lt;/h3&gt;</code>                
+      </div>
+      <div class="wrapper box">
+        <h4>Header Level 4</h4>
+        <code>&lt;h4&gt;...&lt;/h4&gt;</code>
+      </div>
+        
+
+    </section>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <div class="wrapper box">
+        <form method="post" action="#">
+          <label for="form-name">Text Input</label>
+          <input type="text" id="form-name" placeholder="Your input">
+        </form>
+        <h4>Sample code:</h4>
+        <div class="code-line">
+          <code>&lt;form method="post" action="#"&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;label for="form-name"&gt;Text Input&lt;/label&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;input type="text" id="form-name" placeholder="Your input"&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;/form&gt;</code>
+        </div>
+      </div>
+      <div class="wrapper box">
+        <h4 id="dropdown-h4">Dropdown</h4>
+        <select>
+          <option value="Price">Price</option>
+          <option value="Relevance">Relevance</option>
+          <option value="Best-Rated">Best Rated</option>
+        </select>
+        <h4>Sample code:</h4>
+        <div class="code-line">
+          <code>&lt;select&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;option value="Price"&gt;Price&lt;/option&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;option value="Relevance"&gt;Relevance&lt;/option&gt;</code>
+        </div>
+        <div class="code-line">
+          <code>&lt;option value="Best-Rated"&gt;Best Rated&lt;/option&gt;</code>
+        </div>        
+        <div class="code-line">
+          <code>&lt;select&gt;</code>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="buttons">
+      <h2>Buttons</h2>
+      <div class="wrapper box">
+        <h3>Regular Button</h3>
+        <a class="button" href="#buttons">NOTIFY</a>
+        <p>This the default button on the site.</p>
+        <h4>CSS selector:</h4>
+        <code>a.button</code>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;NOTIFY&lt;/a&gt;</code>
+      </div>
+      <div class="wrapper box">
+        <h3>Call-to-Action Button</h3>
+        <a class="button cta" href="#buttons">ADD TO CART</a>
+        <p>This button is used when purchasing an item or adding an item to their cart.</p>
+        <h4>CSS selectors:</h4>
+        <code>a.button a.cta</code> 
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button cta"&gt;ADD TO CART&lt;/a&gt;</code>
+      </div>
+      <div class="wrapper box">
+        <h3>Round Button</h3>
+        <a class="button round" href="#buttons">...</a>      
+        <p>This button is used for contacting the company.</p>
+        <h4>CSS selectors:</h4>
+        <code>a.button a.round</code> 
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button round"&gt;...&lt;/a&gt;</code>
+      </div>
+    </section>
+
+    <section id="images">
+      <h2>Image Links</h2>
+      <div class="wrapper box">
+      <figure>
+        <a class="img-link" href="#images"><img src="img/sample.png" alt="This is a sample image with a brown background and the text - sample image"></a>
+        <figcaption>This an image link</figcaption>
+      </figure>
+      <h4>CSS selector</h4>
+      <code>a.img-link</code>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a class="img-link" href="#images"&gt;&lt;img src="img/sample.png" alt="This is a sample image"&gt;&lt;/a>
+      </code>
+      </div>
+    </section>
+
+    <section id="bread-crumbs">
+      <h2>Bread Crumbs</h2>
+      <div class="wrapper box">
+      <a class="bread-crumbs" href="#bread-crumbs">Bread Crumb Here </a>
+      -
+      <a class="bread-crumbs" href="#bread-crumbs">Bread Crumb Here </a>
+      <h4>CSS Selector</h4>
+      <code>a.bread-crumbs</code>
+      <h4>Sample Code</h4>
+      <code>&lt;a class="bread-crumbs" href="#bread-crumbs"&gt;Bread Crumb Here&lt;/a&gt;</code>
+      </div>
+    </section>
+
+    <section id="groupings">
+      <h2>Groupings</h2>
+      <div class="wrapper box">
+      <h3>Website Header</h3>
+    <header class="impresso-header">
+    <nav class="left-header">
+      <a id="hamburger-menu" href="#">
+        <span class="icon-menu"></span>
+      </a>
+      <a id="logo" href="home.html"><img src="img/logo.svg" alt="This is the Impresso Logo" width="60" height="60"></a>
+
+      <div class="main-nav">
+        <a href="home.html#product-categories">PRODUCTS</a>
+      </div>
+      <div class="main-nav">
+        <a href="home.html#events">EVENTS</a>
+      </div>
+      <div class="main-nav">
+        <a href="home.html#contact">CONTACT</a>
+      </div>
+    </nav>
+    <div class="right-header">
+      <div id="search-button" class="sub-nav">
+        <span class="icon-search"></span>
+      </div>
+      <div id="shopping-cart" class="sub-nav">
+        <a href="item-detail-cart.html">
+          <span class="icon-cart"></span>
+        </a>
+      </div>
+    </div>
+    <div class="clear-float"></div>
+    </header>
+    </div><!--End wrapper box-->
+    </section>
+
+
+    <section id="footer">
+      <h2>Footer</h2>
+      <div class="wrapper box">
+
+    <footer id="contact" class="impresso-footer">
+    <div class="grid">
+    <div class="col-4of10">
+    <section id="contact-us">
+      <h3>Contact Us</h3>
+      <form method="post" action="#">
+        <input type="text" id="form-name" placeholder="Name">
+        <input type="text" id="form-email" placeholder="Email">
+        <textarea rows="5" cols="27" id="form-comment" placeholder="Comment"></textarea>
+        <p><a class="button" href="#">SUBMIT</a></p>
+      </form>
+    </section>
+    </div>
+
+
+
+  <div class="col-3of10">
+    <section id="site-map">
+      <h3>Site Map</h3>
+      <p><a href="home.html"> Home</a></p>
+      <p><a href="home.html#product-categories"> Product</a></p>
+      <p><a href="home.html#events"> Events</a></p>
+      <p><a href="#"> Cart</a></p>
+    </section>
+  </div>
+
+  <div class="col-3of10">
+    <section id="social-media">
+      <h3>Social Media</h3>
+      <a href="#">
+        <span class="icon-twitter"></span>
+      </a>
+      <a href="#">
+        <span class="icon-facebook3"></span>
+      </a>
+      <a href="#">
+        <span class="icon-mail"></span>
+      </a>
+
+    </section>
+  </div>
+  </div>
+  </footer>
+  </div>
+    </section>
+
+
+
+
+
+  </body>
+</html>

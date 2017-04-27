@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Item Detail</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/iconmoon.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>		
+	</head>
+	<body>
+	  	<header class="impresso-header">
+			<nav class="left-header">
+				<a id="hamburger-menu" href="#">
+					<span class="icon-menu"></span>
+				</a>
+				<a id="logo" href="home.html"><img src="img/logo.svg" alt="This is the Impresso Logo" width="60" height="60"></a>
+
+				<div class="main-nav">
+					<a href="home.html#product-categories">PRODUCTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#events">EVENTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#contact">CONTACT</a>
+				</div>
+			</nav>
+			<div class="right-header">
+				<div id="search-button" class="sub-nav">
+					<span class="icon-search"></span>
+				</div>
+				<div id="shopping-cart" class="sub-nav">
+					<a href="item-detail-cart.html">
+						<span class="icon-cart"></span>
+					</a>
+				</div>
+			</div>
+			<div class="clear-float"></div>
+	  	</header>
+
+
+		<div class="saeco-minuto-feature">
+			<section id="about-saeco">
+				<h2>Saeco Minuto</h2>
+				<div class="grid">
+					<div class="col-5of10">
+						<p>Keep every coffee lover in your household happy with the Saeco Minuto, the first fully automatic coffee machine for the North American market that brews both fine-quality espresso and regular coffee from whole beans.  
+						</p>
+					</div><!--End col-5of10-->
+				</div><!--End grid-->
+			</section>
+		</div>
+
+	<div class="grid">
+		<div class="col-10of10">
+			<h2>Saeco Minuto</h2>
+			<a class="bread-crumbs" href="home.html">Home</a>
+			-
+			<a class="bread-crumbs" href="home.html#product-categories">Products</a>
+			-
+			<a class="bread-crumbs" href="espresso-product-listing.html">Espresso Machines</a>
+			-
+			<a class="bread-crumbs" href="#">Saeco Minuto</a>
+		</div>
+		<div class="col-5of10">
+			<figure>
+				<img alt="A transparent image of the Saeco Minuto facing an angle" class="product-img"  src="img/saeco-minuto-pure-transparent.png">
+			</figure>
+		</div>
+
+		<div class="col-5of10">
+			<section id="item-description">
+				<div class="item-details">
+					<p>Only the Saeco Minuto super-automatic espresso machine delivers the real first bean to cup experience with maximum convenience, top-notch performances and large capacities in extra compact dimensions.
+					</p>
+					<ul>
+						<li>Fully automatic operation; automatically grinds and doses the correct amount of coffee for brewing espresso or a medium or long coffee.</li>
+						<li>Five coffee strength settings.</li>
+						<li>Adjustable brewing temperature.</li>
+						<li>100 percent ceramic grinder for perfect grinding with five coarseness preferences.</li>
+						<li>Automatic cleaning and de-scaling for easy maintenance.</li>
+						<li>Compact footprint takes up minimal countertop space.</li>
+						<li>Stainless-steel boiler resists corrosion.</li>
+						<li>Brew group quickly removes for easy cleaning.</li>
+
+
+					</ul>
+					<div class="item-price">$149.99</div>
+					<a class="button cta right" href="item-detail-cart.html">ADD TO CART</a>
+				</div>
+			</section>
+		</div>
+		<div class="col-10of10">
+			<section id="reviews">
+				<div class="review-container">
+					<h2>Reviews</h2>
+					<p>No Reviews Yet</p>
+
+					<form method="post" action="#">
+						<input type="text" id="form-name" placeholder="Name">
+						<input type="text" id="form-email" placeholder="Email">
+						<div class="review-button-container">
+							<textarea rows="5" cols="60" id="form-comment" placeholder="Comment"></textarea>
+						
+							<a class="button cta" href="#">SUBMIT</a>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<section id="slide-out" class="so-hidden">
+		<input type="search" name="search-impresso" placeholder="Search">
+		<h3>MENU</h3>
+		<nav>
+			<a href="home.html#product-categories">PRODUCTS</a>
+			<a href="home.html#events">EVENTS</a>
+			<a href="home.html#contact">CONTACT</a>
+		</nav>
+	</section>
+
+    <script src="js/slide-out.js"></script>
+    
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+      Note the conditionals before and after that do not load this script 
+      if browser is greater-than or equal-to IE9.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+
+	</body>
+</html>

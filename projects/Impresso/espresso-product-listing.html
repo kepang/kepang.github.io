@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<title>Product Listing</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/iconmoon.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<body>
+
+	  	<header class="impresso-header">
+			<nav class="left-header">
+				<a id="hamburger-menu" href="#">
+					<span class="icon-menu"></span>
+				</a>
+				<a id="logo" href="home.html"><img src="img/logo.svg" alt="This is the Impresso Logo" width="60" height="60"></a>
+
+				<div class="main-nav">
+					<a href="home.html#product-categories">PRODUCTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#events">EVENTS</a>
+				</div>
+				<div class="main-nav">
+					<a href="home.html#contact">CONTACT</a>
+				</div>
+			</nav>
+			<div class="right-header">
+				<div id="search-button" class="sub-nav">
+					<span class="icon-search"></span>
+				</div>
+				<div id="shopping-cart" class="sub-nav">
+					<a href="item-detail-cart.html">
+						<span class="icon-cart"></span>
+					</a>
+				</div>
+			</div>
+			<div class="clear-float"></div>
+	  	</header>
+
+	<div class="espresso-feature-bg">
+		<section id="about-espresso">
+			<div class="grid">
+				<div class="col-1of10"></div>
+				<div class="col-5of10">
+					<h2>Espresso Coffee</h2>
+					<p>Brewing coffee by forcing boiling water and pressure through finely ground coffee beans, espresso is generally thicker and considered the foundation of caffe.
+					</p>
+				</div><!--End col-5of10-->
+				<div class="col-4of10"></div>
+			</div><!--End grid-->
+		</section>
+	</div>
+
+
+	 <section id="products">
+		<div class="grid">
+			<div class="col-10of10">
+				<h2>Espresso Machines</h2>
+				<a class="bread-crumbs" href="home.html">Home</a>
+				-
+				<a class="bread-crumbs" href="home.html#product-categories">Products</a>
+				-
+				<a class="bread-crumbs" href="#">Espresso Machines</a>
+			</div>
+
+			<div class="col-33of10">
+				<a class="img-link" href="item-detail.html">
+					<img class="product-categories" src="img/Cafe-aroma.jpg" alt="An image of a silver Cafe Aroma by Breville sitting on a kitchen counter on a sunny day.">
+				</a>
+				<div class="wrapper box">				
+					<h3>Breville Cafe Aroma</h3>
+					<p>Thermoblock heating system extracts espresso at the perfect temperature. A full 15 bars of pressure maximizes crema for a rich, barista-style aroma and taste. Effortless frothing and foaming.</p>
+					<h4>$129.99</h4>	
+				</div>
+			</div>
+			<div class="col-33of10">
+				<a class="img-link" href="item-detail.html">
+					<img class="product-categories" src="img/nespresso.jpg" alt="An image of a red Nespresso Lattasima coffee machine sitting on a counter with a brick wall.">
+				</a>
+				<div class="wrapper box">
+					<h3>Nespresso Lattissima and DeLonghi</h3>
+					<p>Created especially for coffee lovers, the simple single touch milk carafe and frothing system creates the most exotic blend straight to your cup.</p>
+					<h4>$144.99</h4>
+				</div>
+			</div>
+			<div class="col-33of10">
+				<a class="img-link" href="item-detail.html">
+					<img class="product-categories" src="img/saeco-minuto.jpg" alt="An image of a Saeco Minuto espresso machine sitting on a counter against a brick wall.">
+				</a>
+				<div class="wrapper box">
+					<h3>Saeco Minuto</h3>
+					<p>Only the Saeco Minuto super-automatic espresso machine delivers the real first bean to cup experience with maximum convenience, top-notch performances and large capacities in extra compact dimensions.</p>
+					<h4>$149.99</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="slide-out" class="so-hidden">
+		<input type="search" name="search-impresso" placeholder="Search">
+		<h3>MENU</h3>
+		<nav>
+			<a href="home.html#product-categories">PRODUCTS</a>
+			<a href="home.html#events">EVENTS</a>
+			<a href="home.html#contact">CONTACT</a>
+		</nav>
+	</section>
+
+    <script src="js/slide-out.js"></script>
+    
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+      Note the conditionals before and after that do not load this script 
+      if browser is greater-than or equal-to IE9.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+
+
+	</body>
+</html>
